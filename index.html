@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  // Route the admin sub-domain straight to the CRM. The CRM lives in the
+  // separate StepSolar-CRM repo — update CRM_ORIGIN to its deployed URL.
+  // Works on any origin, so admin.stepsolar.in loads the CRM without
+  // exposing the path.
+  (function(){
+    var CRM_ORIGIN = window.location.origin;
+    var host = window.location.hostname || '';
+    if(host.indexOf('admin.') === 0){
+      window.location.replace(CRM_ORIGIN + '/crm.html' + window.location.search + window.location.hash);
+    }
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Panel Installation in Uttar Pradesh &amp; Bihar | Step Solar Energy</title>
+<meta name="description" content="Step Solar Energy installs rooftop solar panels for homes, shops &amp; farms across UP &amp; Bihar. Free site survey, subsidy &amp; net-metering support, transparent pricing. Get a free quotation today.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://stepsolar.in/">
+<meta name="theme-color" content="#1B6FA8">
+<meta name="author" content="Step Solar Energy Pvt Ltd">
+<meta name="geo.region" content="IN-UP">
+<meta name="geo.placename" content="Bhadaura, Ghazipur, Uttar Pradesh">
+<meta name="geo.position" content="25.5833;83.5333">
+<meta name="ICBM" content="25.5833, 83.5333">
+<meta name="keywords" content="solar panel installation, rooftop solar, solar solutions, solar panel price, solar installation company Uttar Pradesh, solar subsidy, net metering, solar water pump, PM Surya Ghar">
+
+<!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Step Solar Energy">
+<meta property="og:title" content="Solar Panel Installation in Uttar Pradesh &amp; Bihar | Step Solar Energy">
+<meta property="og:description" content="Rooftop solar for homes, shops &amp; farms — free site survey, subsidy handling, transparent quotation. Get a free quote today.">
+<meta property="og:url" content="https://stepsolar.in/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1200&auto=format&fit=crop">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Solar panels installed on a rooftop by Step Solar Energy">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solar Panel Installation in Uttar Pradesh &amp; Bihar | Step Solar Energy">
+<meta name="twitter:description" content="Rooftop solar for homes, shops &amp; farms — free site survey, subsidy handling, transparent quotation.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1200&auto=format&fit=crop">
+<meta name="twitter:image:alt" content="Solar panels installed on a rooftop by Step Solar Energy">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="dns-prefetch" href="https://images.unsplash.com">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=800&auto=format&fit=crop">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data: Organization, LocalBusiness, Services, Product, FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://stepsolar.in/#organization",
+      "name": "Step Solar Energy Pvt Ltd",
+      "legalName": "Step Solar Energy Pvt Ltd",
+      "url": "https://stepsolar.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://stepsolar.in/#logo",
+        "url": "https://stepsolar.in/logo.jpg",
+        "caption": "Step Solar Energy logo"
+      },
+      "foundingDate": "2025",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8081252114",
+        "email": "sales@stepsolar.in",
+        "contactType": "sales",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi"]
+      }
+    },
+    {
+      "@type": ["ElectricalBusiness", "LocalBusiness"],
+      "@id": "https://stepsolar.in/#business",
+      "name": "Step Solar Energy",
+      "legalName": "Step Solar Energy Pvt Ltd",
+      "url": "https://stepsolar.in/",
+      "parentOrganization": { "@id": "https://stepsolar.in/#organization" },
+      "image": "https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+      "telephone": "+91-8081252114",
+      "email": "sales@stepsolar.in",
+      "priceRange": "₹₹",
+      "vatID": "09ABPCS3779K1ZC",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Satramganj Bazar, Bhadaura",
+        "addressLocality": "Ghazipur",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "232333",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.5833,
+        "longitude": 83.5333
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }],
+      "hasMap": "https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac",
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Uttar Pradesh" },
+        { "@type": "AdministrativeArea", "name": "Bihar" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Solar Energy Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@id": "https://stepsolar.in/#service-residential" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://stepsolar.in/#service-commercial" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://stepsolar.in/#service-agri" } }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://stepsolar.in/#service-residential",
+      "name": "Residential Rooftop Solar Installation",
+      "serviceType": "Rooftop Solar Installation",
+      "provider": { "@id": "https://stepsolar.in/#business" },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Uttar Pradesh" },
+        { "@type": "AdministrativeArea", "name": "Bihar" }
+      ],
+      "description": "1–10 kW rooftop solar systems for homes, sized to your electricity bill and roof space, installed and commissioned by Step Solar's own engineers with free maintenance for one year.",
+      "url": "https://stepsolar.in/#solutions"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://stepsolar.in/#service-commercial",
+      "name": "Commercial Solar Installation",
+      "serviceType": "Commercial Solar Installation",
+      "provider": { "@id": "https://stepsolar.in/#business" },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Uttar Pradesh" },
+        { "@type": "AdministrativeArea", "name": "Bihar" }
+      ],
+      "description": "Rooftop solar systems for shops, mandis, offices and small factories to cut daytime running costs, with net-metering support.",
+      "url": "https://stepsolar.in/#solutions"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://stepsolar.in/#service-agri",
+      "name": "Solar Water Pump Installation",
+      "serviceType": "Solar Water Pump Installation",
+      "provider": { "@id": "https://stepsolar.in/#business" },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Uttar Pradesh" },
+        { "@type": "AdministrativeArea", "name": "Bihar" }
+      ],
+      "description": "Diesel-free irrigation with solar-powered pump sets, built for farm use across the region, with subsidy paperwork handled for you.",
+      "url": "https://stepsolar.in/#solutions"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://stepsolar.in/#product-3kw",
+      "name": "3 kW Residential Rooftop Solar System",
+      "category": "Rooftop Solar",
+      "description": "Complete 3 kW rooftop solar package for a typical Indian home — Tier-1 panels, grid-tie inverter, mounting structure, cabling and installation & commissioning by Step Solar.",
+      "brand": { "@type": "Brand", "name": "Step Solar Energy" },
+      "image": "https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1200&auto=format&fit=crop",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": "165000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://stepsolar.in/#quote"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://stepsolar.in/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the price of a rooftop solar system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A rooftop solar system typically costs about ₹55,000 per kW installed. A 3 kW system therefore works out to roughly ₹1.65 lakh before subsidy. Your exact quote is confirmed after a free site survey, and we itemise every cost — panels, inverter, structure, wiring and labour — with no hidden charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I save on my electricity bill with solar panels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Step Solar customers reduce their monthly electricity bill by up to 90%. With net metering, surplus energy your rooftop generates is exported back to the grid and adjusted against the power you draw at night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a solar system take to pay for itself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical payback is 4–5 years for most homes, while solar panels carry a 25-year performance warranty — so you keep saving for two decades after the system has paid for itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to handle the subsidy and net-metering paperwork myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Step Solar manages your PM Surya Ghar subsidy and discom net-metering paperwork for you, so you don't have to run between government offices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas does Step Solar serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We install and service rooftop solar across Uttar Pradesh and Bihar, and are based in Bhadaura, Ghazipur (UP)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a site visit required before I get a quotation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — a free, no-obligation site survey is the first step. Our surveyor checks your roof or land space, shadow-free area, structure strength and electrical connection, and only then we size your system and share an itemised quotation."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --blue:#1B6FA8;
+    --blue-deep:#12507B;
+    --green:#3FA535;
+    --green-deep:#2C7C24;
+    --brown:#8A6C3F;
+    --sun:#F5A623;
+    --sand:#F4F8F4;
+    --paper:#FFFFFF;
+    --ink:#182420;
+    --ink-soft:#4B5A54;
+    --line: rgba(24,36,32,0.10);
+    --radius: 14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  h1,h2,h3,.display{font-family:'Space Grotesk', sans-serif; letter-spacing:-0.01em;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--green-deep);
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{content:"";width:18px;height:2px;background:var(--sun);display:inline-block;}
+  section{padding:88px 0;}
+  @media (max-width:720px){ section{padding:56px 0;} }
+
+  header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(244,248,244,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand img{height:42px; width:auto;}
+  .brand-text{font-family:'Space Grotesk'; font-weight:700; font-size:1.05rem; line-height:1.1;}
+  .brand-text span{display:block; font-family:'Inter'; font-weight:500; font-size:0.66rem; letter-spacing:0.12em; color:var(--ink-soft); text-transform:uppercase; margin-top:2px;}
+  nav.links{display:flex; gap:30px; font-size:0.92rem; font-weight:500;}
+  nav.links a{color:var(--ink-soft); transition:color .2s;}
+  nav.links a:hover{color:var(--blue);}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:12px 22px; border-radius:999px; font-weight:600; font-size:0.9rem;
+    border:none; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-sun{background:var(--sun); color:#2A1A00; box-shadow:0 6px 20px -6px rgba(245,166,35,0.7);}
+  .btn-sun:hover{transform:translateY(-2px); box-shadow:0 10px 26px -6px rgba(245,166,35,0.85);}
+  .btn-sun[disabled]{opacity:0.6; cursor:not-allowed; transform:none;}
+  .btn-ghost{background:transparent; border:1.5px solid var(--line); color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--blue); color:var(--blue);}
+  .menu-toggle{display:none; background:none; border:none; font-size:1.6rem; cursor:pointer;}
+  @media (max-width:860px){
+    nav.links{display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  .hero{
+    position:relative; overflow:hidden;
+    padding:72px 0 90px;
+    background:
+      radial-gradient(680px 420px at 88% -10%, rgba(63,165,53,0.16), transparent 60%),
+      radial-gradient(600px 380px at 8% 110%, rgba(27,111,168,0.14), transparent 60%);
+  }
+  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;}
+  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr;} }
+  .hero h1{
+    font-size:clamp(2.3rem, 4.4vw, 3.5rem);
+    font-weight:700; line-height:1.05; margin:18px 0 20px;
+    color:var(--ink);
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(92deg, var(--blue) 0%, var(--green) 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{font-size:1.08rem; color:var(--ink-soft); max-width:520px; margin-bottom:30px;}
+  .hero-cta{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px;}
+  .trust-row{display:flex; gap:22px; flex-wrap:wrap; font-size:0.78rem; color:var(--ink-soft);}
+  .trust-row b{color:var(--ink); font-weight:600;}
+
+  .hero-photo{
+    position:absolute; right:-40px; top:18px; width:230px; z-index:0;
+    border-radius:18px; overflow:hidden; box-shadow:0 24px 50px -18px rgba(18,50,30,0.45);
+    transform:rotate(4deg); transition:transform .35s ease;
+    border:5px solid #fff;
+  }
+  .hero-photo img{height:170px; object-fit:cover; width:100%;}
+  .hero-photo:hover{transform:rotate(0deg) scale(1.04);}
+  .hero-photo .cap{
+    position:absolute; bottom:0; left:0; right:0; padding:8px 10px;
+    background:linear-gradient(0deg, rgba(0,0,0,0.65), transparent);
+    color:#fff; font-size:0.66rem; font-family:'IBM Plex Mono'; letter-spacing:0.03em;
+  }
+  @media (max-width:960px){ .hero-photo{display:none;} }
+
+  .calc{
+    background:var(--paper); border-radius:20px; padding:28px 26px 26px;
+    border:1px solid var(--line); box-shadow:0 20px 50px -20px rgba(18,80,123,0.25);
+    position:relative;
+  }
+  .calc-top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;}
+  .calc-top h3{font-size:1.05rem;}
+  .calc-top span{font-size:0.7rem; color:var(--ink-soft); font-family:'IBM Plex Mono';}
+  .calc label{font-size:0.82rem; color:var(--ink-soft); font-weight:500; display:block; margin:18px 0 8px;}
+  .bill-value{font-family:'Space Grotesk'; font-weight:700; font-size:1.6rem; color:var(--blue-deep);}
+  input[type=range]{
+    -webkit-appearance:none; width:100%; height:6px; border-radius:4px;
+    background:linear-gradient(90deg, var(--blue), var(--green));
+    outline:none;
+  }
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none; width:20px; height:20px; border-radius:50%;
+    background:#fff; border:4px solid var(--green-deep); cursor:pointer;
+    box-shadow:0 2px 6px rgba(0,0,0,0.25);
+  }
+  .calc-results{
+    margin-top:22px; display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  }
+  .result-box{
+    background:var(--sand); border-radius:12px; padding:14px 14px;
+    border:1px solid var(--line);
+  }
+  .result-box .k{font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); font-weight:600;}
+  .result-box .v{font-family:'IBM Plex Mono'; font-weight:600; font-size:1.25rem; margin-top:4px; color:var(--green-deep);}
+  .result-box.wide{grid-column:1/-1; background:linear-gradient(90deg, rgba(27,111,168,0.08), rgba(63,165,53,0.10));}
+  .calc-note{font-size:0.7rem; color:var(--ink-soft); margin-top:14px; line-height:1.5;}
+
+  .pillars{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .pillars-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border-radius:16px; overflow:hidden;}
+  @media (max-width:760px){ .pillars-grid{grid-template-columns:1fr;} }
+  .pillar{background:var(--paper); padding:34px 30px;}
+  .pillar .word{font-family:'Space Grotesk'; font-weight:700; font-size:1.35rem; margin-bottom:10px;}
+  .pillar:nth-child(1) .word{color:var(--green-deep);}
+  .pillar:nth-child(2) .word{color:var(--blue);}
+  .pillar:nth-child(3) .word{color:var(--brown);}
+  .pillar p{color:var(--ink-soft); font-size:0.94rem;}
+
+  .sec-head{max-width:640px; margin-bottom:48px;}
+  .sec-head h2{font-size:clamp(1.7rem,3vw,2.3rem); margin-top:14px; font-weight:700;}
+  .sec-head p{color:var(--ink-soft); margin-top:12px; font-size:1rem;}
+
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:900px){ .why-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .why-grid{grid-template-columns:1fr;} }
+  .why-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px 24px;}
+  .why-card .dot{width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg, var(--blue), var(--green)); margin-bottom:16px;}
+  .why-card h3{font-size:1.02rem; margin-bottom:8px;}
+  .why-card p{font-size:0.9rem; color:var(--ink-soft);}
+
+  .process{background:var(--paper);}
+  .timeline{position:relative; margin-top:10px;}
+  .timeline::before{
+    content:""; position:absolute; left:23px; top:6px; bottom:6px; width:2px;
+    background:linear-gradient(180deg, var(--blue), var(--green), var(--brown));
+  }
+  @media (max-width:640px){ .timeline::before{left:17px;} }
+  .step{position:relative; display:flex; gap:24px; padding:22px 0;}
+  .step .num{
+    flex:0 0 auto; width:48px; height:48px; border-radius:50%;
+    background:var(--paper); border:2px solid var(--blue); color:var(--blue-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'IBM Plex Mono'; font-weight:600; font-size:0.95rem; z-index:2;
+  }
+  @media (max-width:640px){ .step .num{width:36px; height:36px; font-size:0.8rem;} }
+  .step:nth-child(2) .num{border-color:var(--green);}
+  .step:nth-child(3) .num{border-color:var(--sun);}
+  .step:nth-child(4) .num{border-color:var(--blue);}
+  .step:nth-child(5) .num{border-color:var(--green);}
+  .step:nth-child(6) .num{border-color:var(--brown);}
+  .step:nth-child(7) .num{border-color:var(--sun);}
+  .step-body h3{font-size:1.02rem; margin-bottom:5px;}
+  .step-body .who{font-family:'IBM Plex Mono'; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--brown); font-weight:600; margin-bottom:6px; display:block;}
+  .step-body p{font-size:0.9rem; color:var(--ink-soft); max-width:560px;}
+
+  .gallery{background:var(--sand);}
+  .gal-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; grid-template-rows:1fr 1fr; gap:16px; height:460px;}
+  @media (max-width:860px){ .gal-grid{grid-template-columns:1fr 1fr; grid-template-rows:200px 200px 200px; height:auto;} }
+  @media (max-width:540px){ .gal-grid{grid-template-columns:1fr; grid-template-rows:none;} }
+  .gal-item{
+    position:relative; border-radius:16px; overflow:hidden; cursor:pointer;
+    grid-row: span 2;
+  }
+  .gal-item.small{grid-row:span 1;}
+  @media (max-width:860px){ .gal-item{grid-row:span 1 !important;} }
+  .gal-item img{
+    width:100%; height:100%; object-fit:cover;
+    transition:transform .5s ease, filter .5s ease;
+  }
+  .gal-item:hover img{transform:scale(1.08); filter:brightness(0.85);}
+  .gal-caption{
+    position:absolute; left:0; right:0; bottom:0; padding:18px;
+    background:linear-gradient(0deg, rgba(10,20,14,0.85), transparent 70%);
+    color:#fff; transform:translateY(8px); opacity:0.92; transition:transform .3s ease;
+  }
+  .gal-item:hover .gal-caption{transform:translateY(0);}
+  .gal-caption .t{font-family:'Space Grotesk'; font-weight:600; font-size:1rem;}
+  .gal-caption .s{font-family:'IBM Plex Mono'; font-size:0.66rem; opacity:0.8; margin-top:2px;}
+  .gal-zoom{
+    position:absolute; top:14px; right:14px; width:34px; height:34px; border-radius:50%;
+    background:rgba(255,255,255,0.9); display:flex; align-items:center; justify-content:center;
+    font-size:0.9rem; opacity:0; transition:opacity .25s ease;
+  }
+  .gal-item:hover .gal-zoom{opacity:1;}
+
+  .lightbox{
+    position:fixed; inset:0; background:rgba(8,14,10,0.92); z-index:1000;
+    display:none; align-items:center; justify-content:center; padding:30px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(900px,92vw); max-height:80vh; border-radius:12px; box-shadow:0 30px 70px rgba(0,0,0,0.5);}
+  .lightbox-cap{position:absolute; bottom:40px; left:0; right:0; text-align:center; color:#fff; font-family:'IBM Plex Mono'; font-size:0.8rem;}
+  .lightbox-close{
+    position:absolute; top:24px; right:28px; width:42px; height:42px; border-radius:50%;
+    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.3); color:#fff;
+    font-size:1.3rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  }
+  .lightbox-close:hover{background:rgba(255,255,255,0.22);}
+
+  .sol-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:900px){ .sol-grid{grid-template-columns:1fr;} }
+  .sol-card{
+    border-radius:18px; padding:28px 24px; color:#fff; min-height:230px;
+    display:flex; flex-direction:column; justify-content:flex-end;
+    position:relative; overflow:hidden;
+  }
+  .sol-card{background-size:cover; background-position:center; transition:transform .3s ease;}
+  .sol-card:hover{transform:translateY(-6px);}
+  .sol-card::before{content:""; position:absolute; inset:0; opacity:0.85;}
+  .sol-card.res::before{background:linear-gradient(180deg, rgba(18,80,123,0.35), var(--blue-deep) 88%);}
+  .sol-card.com::before{background:linear-gradient(180deg, rgba(31,90,46,0.35), #1F5A2E 88%);}
+  .sol-card.agr::before{background:linear-gradient(180deg, rgba(92,70,38,0.35), #5C4626 88%);}
+  .sol-card *{position:relative; z-index:1;}
+  .sol-card .tag{font-family:'IBM Plex Mono'; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.1em; opacity:0.85; margin-bottom:10px;}
+  .sol-card h3{font-family:'Space Grotesk'; font-size:1.25rem; margin-bottom:8px;}
+  .sol-card p{font-size:0.87rem; opacity:0.92;}
+
+  .stats{background:linear-gradient(120deg, var(--blue-deep), var(--blue) 55%, var(--green-deep)); color:#fff; border-radius:22px; margin:0 24px; padding:52px 40px;}
+  @media (max-width:900px){ .stats{margin:0 16px; padding:38px 24px;} }
+  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:30px;}
+  @media (max-width:760px){ .stats-grid{grid-template-columns:repeat(2,1fr);} }
+  .stat .v{font-family:'IBM Plex Mono'; font-weight:600; font-size:2rem;}
+  .stat .k{font-size:0.8rem; opacity:0.85; margin-top:6px;}
+  .stats h2{color:#fff;}
+  .stats p{color:rgba(255,255,255,0.85);}
+
+  .quote{background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:44px; display:grid; grid-template-columns:0.8fr 1.2fr; gap:40px;}
+  @media (max-width:860px){ .quote{grid-template-columns:1fr; padding:28px;} }
+  .quote-info h2{font-size:1.7rem; margin-bottom:14px;}
+  .quote-info p{color:var(--ink-soft); margin-bottom:20px;}
+  .quote-info ul{list-style:none;}
+  .quote-info li{display:flex; gap:10px; align-items:flex-start; margin-bottom:10px; font-size:0.9rem; color:var(--ink-soft);}
+  .quote-info li::before{content:"✓"; color:var(--green-deep); font-weight:700;}
+  form.qform{display:flex; flex-direction:column; gap:14px;}
+  .qform input, .qform select{
+    width:100%; padding:13px 14px; border-radius:10px; border:1.5px solid var(--line);
+    font-family:'Inter'; font-size:0.92rem; background:var(--sand); color:var(--ink);
+  }
+  .qform input:focus, .qform select:focus{outline:none; border-color:var(--blue);}
+  .qform button{margin-top:6px;}
+
+  .field-label{font-size:0.82rem; font-weight:600; color:var(--ink); margin-top:4px;}
+  .field-label .req{color:var(--sun); margin-left:2px;}
+  .field-row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media (max-width:520px){ .field-row{grid-template-columns:1fr;} }
+  .choice-group{display:flex; flex-wrap:wrap; gap:9px;}
+  .choice{
+    position:relative;
+  }
+  .choice input{position:absolute; opacity:0; width:0; height:0;}
+  .choice span{
+    display:inline-flex; align-items:center; padding:9px 15px; border-radius:999px;
+    border:1.5px solid var(--line); background:var(--sand); font-size:0.83rem;
+    color:var(--ink-soft); cursor:pointer; transition:all .18s ease; font-weight:500;
+  }
+  .choice input:checked + span{
+    background:linear-gradient(90deg, var(--blue), var(--green-deep)); color:#fff; border-color:transparent;
+  }
+  .choice input:focus-visible + span{outline:2px solid var(--blue); outline-offset:2px;}
+  .form-note{font-size:0.72rem; color:var(--ink-soft);}
+
+  /* --- Form alert / success / error ------------------------------------ */
+  .form-alert{
+    border-radius:12px; padding:14px 16px; font-size:0.9rem; line-height:1.5;
+    display:none; margin-top:4px;
+    animation:slideIn .3s ease;
+  }
+  @keyframes slideIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
+  .form-alert.show{display:block;}
+  .form-alert.success{background:rgba(63,165,53,0.10); border:1px solid rgba(63,165,53,0.35); color:var(--green-deep);}
+  .form-alert.error{background:rgba(200,50,50,0.08); border:1px solid rgba(200,50,50,0.35); color:#a02020;}
+  .form-alert b{font-family:'Space Grotesk'; font-weight:600;}
+
+  .btn-spinner{
+    display:inline-block; width:14px; height:14px; border-radius:50%;
+    border:2px solid rgba(42,26,0,0.25); border-top-color:#2A1A00;
+    animation:spin 0.8s linear infinite; margin-right:6px; vertical-align:-2px;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  /* --- FAQ -------------------------------------------------------------- */
+  #faq{padding:90px 0;}
+  .faq-list{max-width:760px; margin:0 auto; display:grid; gap:12px;}
+  .faq-list details{
+    background:var(--sand); border:1.5px solid var(--line); border-radius:14px; overflow:hidden;
+  }
+  .faq-list summary{
+    cursor:pointer; font-weight:600; font-size:1rem; color:var(--ink);
+    padding:18px 46px 18px 20px; position:relative; list-style:none;
+    font-family:'Space Grotesk';
+  }
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{
+    content:"+"; position:absolute; right:18px; top:50%; transform:translateY(-50%);
+    font-size:1.3rem; color:var(--blue); font-weight:700; transition:transform .18s ease;
+  }
+  .faq-list details[open] summary::after{transform:translateY(-50%) rotate(45deg);}
+  .faq-list details p{
+    margin:0; padding:0 20px 18px; font-size:0.92rem; line-height:1.65; color:var(--ink-soft);
+  }
+
+  footer{background:#12241A; color:#E7EDE9; padding:56px 0 26px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  @media (max-width:760px){ .foot-grid{grid-template-columns:1fr; gap:28px;} }
+  .foot-brand{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+  .foot-brand img{height:38px; background:#fff; border-radius:8px; padding:3px;}
+  .foot-brand b{font-family:'Space Grotesk'; font-size:1.05rem;}
+  footer p{color:rgba(231,237,233,0.7); font-size:0.87rem; line-height:1.6;}
+  footer h4{font-size:0.78rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(231,237,233,0.55); margin-bottom:14px;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:9px; font-size:0.88rem;}
+  footer a:hover{color:var(--sun);}
+  .foot-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-top:22px; font-size:0.76rem; color:rgba(231,237,233,0.5);}
+
+  ::selection{background:var(--sun); color:#2A1A00;}
+</style>
+</head>
+<body>
+
+<!-- React mount point (hidden — this page is static HTML) -->
+<div id="root" style="display:none;"></div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" data-testid="brand-link">
+      <img src="logo.jpg" alt="Step Solar Energy logo" onerror="this.style.display='none'">
+      <div class="brand-text">Step Solar Energy<span>Pvt Ltd</span></div>
+    </a>
+    <nav class="links">
+      <a href="#why" data-testid="nav-why">Why Solar</a>
+      <a href="#gallery" data-testid="nav-gallery">Gallery</a>
+      <a href="#process" data-testid="nav-process">Our Process</a>
+      <a href="#solutions" data-testid="nav-solutions">Solutions</a>
+      <a href="#calculator" data-testid="nav-calc">Savings</a>
+      <a href="#quote" data-testid="nav-contact">Contact</a>
+    </nav>
+    <a href="#quote" class="btn btn-sun" data-testid="nav-cta">Get Free Quotation</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Uttar Pradesh &amp; Bihar · Rooftop, Residential, Commercial &amp; Agri</span>
+      <h1>Turn your roof into <em>your own power plant.</em></h1>
+      <p class="lead">Step Solar Energy designs, installs and services rooftop solar for homes, shops and farms across Uttar Pradesh &amp; Bihar — from your first enquiry to the day the meter starts running backwards.</p>
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn-sun" data-testid="hero-cta-quote">Get Free Quotation</a>
+        <a href="#process" class="btn btn-ghost" data-testid="hero-cta-process">See how it works</a>
+      </div>
+      <div class="trust-row">
+        <span><b>GST</b> 09ABPCS3779K1ZC</span>
+        <span><b>CIN</b> U42201UP2025PTC217484</span>
+        <span><b>Based in</b> Ghazipur, Uttar Pradesh</span>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=800&auto=format&fit=crop" alt="Solar panels installed on a rooftop" fetchpriority="high" decoding="async">
+      <div class="cap">Rooftop installation</div>
+    </div>
+
+    <div class="calc" id="calculator">
+      <div class="calc-top">
+        <h3>Bijli Bill Calculator</h3>
+        <span class="mono">ESTIMATE</span>
+      </div>
+      <label for="billRange">Your current monthly electricity bill</label>
+      <div class="bill-value mono">₹<span id="billOut">4000</span> / month</div>
+      <input type="range" id="billRange" min="500" max="20000" step="100" value="4000">
+      <div class="calc-results">
+        <div class="result-box"><div class="k">Suggested system</div><div class="v" id="sysSize">4.0 kW</div></div>
+        <div class="result-box"><div class="k">Est. payback</div><div class="v" id="payback">~4.2 yrs</div></div>
+        <div class="result-box wide"><div class="k">Estimated 25-year savings</div><div class="v" id="lifeSavings">₹ 9,00,000+</div></div>
+      </div>
+      <p class="calc-note">Illustrative estimate based on average UP sunlight hours and grid tariffs. Your exact system size, subsidy and quotation are confirmed after a free site survey.</p>
+    </div>
+  </div>
+</section>
+
+<div class="pillars">
+  <div class="wrap" style="padding:40px 0;">
+    <div class="pillars-grid">
+      <div class="pillar"><div class="word">Freedom</div><p>Stop depending on grid supply and rising tariffs. Generate your own electricity, right from your rooftop.</p></div>
+      <div class="pillar"><div class="word">Future</div><p>25-year panel life, clean energy for your family and farm, and a system that keeps paying you back for decades.</p></div>
+      <div class="pillar"><div class="word">Savings</div><p>Government subsidy support plus a monthly bill that drops close to zero — most customers recover their cost in under 5 years.</p></div>
+    </div>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why Step Solar</span>
+      <h2>One local team, from survey to switch-on.</h2>
+      <p>We're not a marketplace connecting you to unknown installers — our own engineers survey, design, install and service every system we sell in Uttar Pradesh.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="dot"></div><h3>Registered &amp; compliant</h3><p>A GST-registered, MCA-incorporated company (CIN U42201UP2025PTC217484) — not an unregistered local vendor.</p></div>
+      <div class="why-card"><div class="dot"></div><h3>Subsidy handled for you</h3><p>We manage your PM Surya Ghar / net-metering paperwork with the discom, so you don't have to run between offices.</p></div>
+      <div class="why-card"><div class="dot"></div><h3>Built for all conditions &amp; weather</h3><p>Built to deliver maximum performance across all climates — featuring robust protection against intense heat, dust, voltage drops, and severe weather conditions.</p></div>
+      <div class="why-card"><div class="dot"></div><h3>Zero Maintenance Cost</h3><p>We keep your system running at peak efficiency with free site visits every 3 months and full maintenance support free for one year.</p></div>
+      <div class="why-card"><div class="dot"></div><h3>Transparent quotation</h3><p>Every quotation is itemised — panels, inverter, structure, wiring and labour — with no hidden charges added later.</p></div>
+      <div class="why-card"><div class="dot"></div><h3>Farm &amp; business ready</h3><p>Beyond rooftops, we install solar water pumps and commercial systems sized for shops, mandis and small industry.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>What a Step Solar installation looks like.</h2>
+      <p>Tap any photo for a closer look.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item" onclick="openLightbox(0)"><img src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=1200&auto=format&fit=crop" alt="Solar panels installed on a rooftop" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Rooftop Installation</div><div class="s">Residential system, panels mounted</div></div></div>
+      <div class="gal-item small" onclick="openLightbox(1)"><img src="https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Close-up of solar panel cells" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Photovoltaic Cells</div><div class="s">High-efficiency panel, close-up</div></div></div>
+      <div class="gal-item small" onclick="openLightbox(2)"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Solar panel array under blue sky" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Ground-Mount Array</div><div class="s">Ideal for farms &amp; open land</div></div></div>
+      <div class="gal-item small" onclick="openLightbox(1)"><img src="https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Solar panel texture pattern" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Built to Last</div><div class="s">25-year performance warranty</div></div></div>
+      <div class="gal-item small" onclick="openLightbox(2)"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Solar farm field" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Clean Energy</div><div class="s">Powering homes across UP</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Our Process</span>
+      <h2>Seven steps, one dedicated team member at each.</h2>
+      <p>Every lead moves through defined stages, handled by the right specialist — tracked end-to-end so nothing is missed.</p>
+    </div>
+    <div class="timeline">
+      <div class="step"><div class="num">01</div><div class="step-body"><span class="who">Sales Team</span><h3>Enquiry &amp; Requirement Call</h3><p>You share your electricity bill and roof/land details — over the website, phone or in person — and our sales team notes down your requirement.</p></div></div>
+      <div class="step"><div class="num">02</div><div class="step-body"><span class="who">Site Survey Team</span><h3>Free Site Survey</h3><p>Our surveyor visits your site to check roof/land space, shadow-free area, structure strength and electrical connection.</p></div></div>
+      <div class="step"><div class="num">03</div><div class="step-body"><span class="who">Sales Team</span><h3>Design &amp; Quotation</h3><p>We prepare a system design and a detailed, itemised quotation — sent to you as a PDF for your approval.</p></div></div>
+      <div class="step"><div class="num">04</div><div class="step-body"><span class="who">Accounts Team</span><h3>Booking &amp; Subsidy Filing</h3><p>On confirmation, we collect the booking amount, raise your order and file your subsidy / net-metering application.</p></div></div>
+      <div class="step"><div class="num">05</div><div class="step-body"><span class="who">Installation Team</span><h3>Material Dispatch &amp; Installation</h3><p>Panels, inverter and structure are dispatched and installed by our trained technicians on a scheduled date.</p></div></div>
+      <div class="step"><div class="num">06</div><div class="step-body"><span class="who">Installation Team</span><h3>Testing &amp; Commissioning</h3><p>The system is tested end-to-end, net meter is coordinated with the discom, and your solar plant is switched on.</p></div></div>
+      <div class="step"><div class="num">07</div><div class="step-body"><span class="who">Accounts Team</span><h3>Final Invoice &amp; Handover</h3><p>Final invoice and warranty documents are issued, and your system is handed over with after-sales support in place.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="solutions">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Solutions</span>
+      <h2>Solar for every roof, shop and field.</h2>
+    </div>
+    <div class="sol-grid">
+      <div class="sol-card res" style="background-image:url('https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=900&auto=format&fit=crop');"><span class="tag">Residential</span><h3>Home Rooftop Solar</h3><p>1 kW – 10 kW systems for houses, sized to your monthly bill and roof space.</p></div>
+      <div class="sol-card com" style="background-image:url('https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=60&w=900&auto=format&fit=crop');"><span class="tag">Commercial</span><h3>Shops &amp; Small Industry</h3><p>Systems for mandis, shops, offices and small factories to cut daytime running costs.</p></div>
+      <div class="sol-card agr" style="background-image:url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=60&w=900&auto=format&fit=crop');"><span class="tag">Agricultural</span><h3>Solar Water Pumps</h3><p>Diesel-free irrigation with solar-powered pump sets, built for farm use across the region.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="stats">
+    <span class="eyebrow" style="color:#D7E8FF;">By The Numbers</span>
+    <h2>Why customers switch to Step Solar</h2>
+    <p>Illustrative figures based on typical rooftop installations — your exact numbers are confirmed at the survey stage.</p>
+    <div class="stats-grid">
+      <div class="stat"><div class="v">25 yrs</div><div class="k">Panel performance warranty</div></div>
+      <div class="stat"><div class="v">~90%</div><div class="k">Typical bill reduction</div></div>
+      <div class="stat"><div class="v">4–5 yrs</div><div class="k">Average payback period</div></div>
+      <div class="stat"><div class="v">7 steps</div><div class="k">Tracked from enquiry to handover</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap">
+    <div class="quote">
+      <div class="quote-info">
+        <span class="eyebrow">Get Started</span>
+        <h2>Get Free Solar Quotation &amp; Save up to 90% on Electricity Bills!</h2>
+        <p><b>Step Solar Energy Pvt Ltd</b><br>Share your details below — our sales team will call you to schedule a free site survey.</p>
+        <ul>
+          <li>No cost, no obligation site visit</li>
+          <li>Itemised quotation as a PDF</li>
+          <li>Subsidy &amp; paperwork support included</li>
+        </ul>
+        <p class="form-note" style="margin-top:18px;"><span style="color:var(--sun); font-weight:700;">*</span> Indicates required question</p>
+      </div>
+
+      <form class="qform" id="quoteForm" onsubmit="handleQuote(event)" data-testid="quote-form">
+
+        <label class="field-label">Full Name<span class="req">*</span></label>
+        <input type="text" name="full_name" placeholder="Your full name" required data-testid="input-full-name">
+
+        <div class="field-row">
+          <div>
+            <label class="field-label">Contact Number<span class="req">*</span></label>
+            <input type="tel" name="phone" placeholder="10-digit mobile number" required pattern="[6-9][0-9]{9}" data-testid="input-phone">
+          </div>
+          <div>
+            <label class="field-label">Email Address<span class="req">*</span></label>
+            <input type="email" name="email" placeholder="you@example.com" required data-testid="input-email">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div>
+            <label class="field-label">State<span class="req">*</span></label>
+            <input type="text" name="state" placeholder="e.g. Uttar Pradesh / Bihar" required data-testid="input-state">
+          </div>
+          <div>
+            <label class="field-label">City<span class="req">*</span></label>
+            <input type="text" name="city" placeholder="Your city / town" required data-testid="input-city">
+          </div>
+        </div>
+
+        <label class="field-label">Pincode<span class="req">*</span></label>
+        <input type="text" name="pincode" placeholder="6-digit pincode" required pattern="[0-9]{6}" inputmode="numeric" data-testid="input-pincode">
+
+        <label class="field-label">Property Type<span class="req">*</span></label>
+        <div class="choice-group">
+          <label class="choice"><input type="radio" name="propertyType" value="Residential" required data-testid="prop-residential"><span>Residential</span></label>
+          <label class="choice"><input type="radio" name="propertyType" value="Commercial / Office" data-testid="prop-commercial"><span>Commercial / Office</span></label>
+          <label class="choice"><input type="radio" name="propertyType" value="Industrial / Factory" data-testid="prop-industrial"><span>Industrial / Factory</span></label>
+          <label class="choice"><input type="radio" name="propertyType" value="Agricultural / Pump" data-testid="prop-agri"><span>Agricultural / Pump</span></label>
+        </div>
+
+        <label class="field-label">Monthly Electricity Bill (₹)<span class="req">*</span></label>
+        <input type="number" name="monthly_bill" placeholder="e.g. 4000" required min="0" data-testid="input-bill">
+
+        <label class="field-label">Roof Type &amp; Space<span class="req">*</span></label>
+        <div class="choice-group">
+          <label class="choice"><input type="radio" name="roofType" value="Rented Roof / No Roof" required data-testid="roof-rented"><span>Rented Roof / No Roof</span></label>
+          <label class="choice"><input type="radio" name="roofType" value="Small Space (100-200 sq. ft.)" data-testid="roof-small"><span>Small Space (100–200 sq. ft.)</span></label>
+          <label class="choice"><input type="radio" name="roofType" value="Medium Space (300-500 sq. ft.)" data-testid="roof-medium"><span>Medium Space (300–500 sq. ft.)</span></label>
+          <label class="choice"><input type="radio" name="roofType" value="Large Open Roof (500+ sq. ft.)" data-testid="roof-large"><span>Large Open Roof (500+ sq. ft.)</span></label>
+        </div>
+
+        <label class="field-label">Aap Solar kab tak lagwana chahte hain?<span class="req">*</span></label>
+        <div class="choice-group">
+          <label class="choice"><input type="radio" name="timeline" value="Immediately" required data-testid="time-now"><span>Immediately</span></label>
+          <label class="choice"><input type="radio" name="timeline" value="Within 1-2 months" data-testid="time-1-2m"><span>Within 1–2 months</span></label>
+          <label class="choice"><input type="radio" name="timeline" value="Sirf jankari aur quotation chahiye" data-testid="time-info"><span>Sirf jankari aur quotation chahiye</span></label>
+        </div>
+
+        <div id="formAlert" class="form-alert" role="status" data-testid="form-alert"></div>
+
+        <button type="submit" class="btn btn-sun" id="submitBtn" data-testid="submit-quote">Request Free Quotation</button>
+        <p class="form-note">By submitting, you agree to be contacted by Step Solar Energy Pvt Ltd regarding your enquiry.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Solar panel installation questions, answered.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>What is the price of a rooftop solar system?</summary>
+        <p>A rooftop solar system typically costs about ₹55,000 per kW installed. A 3 kW system therefore works out to roughly ₹1.65 lakh before subsidy. Your exact quote is confirmed after a free site survey, and we itemise every cost — panels, inverter, structure, wiring and labour — with no hidden charges.</p>
+      </details>
+      <details>
+        <summary>How much can I save on my electricity bill with solar panels?</summary>
+        <p>Most Step Solar customers reduce their monthly electricity bill by up to 90%. With net metering, surplus energy your rooftop generates is exported back to the grid and adjusted against the power you draw at night.</p>
+      </details>
+      <details>
+        <summary>How long does a solar system take to pay for itself?</summary>
+        <p>Typical payback is 4–5 years for most homes, while solar panels carry a 25-year performance warranty — so you keep saving for two decades after the system has paid for itself.</p>
+      </details>
+      <details>
+        <summary>Do I have to handle the subsidy and net-metering paperwork myself?</summary>
+        <p>No. Step Solar manages your PM Surya Ghar subsidy and discom net-metering paperwork for you, so you don't have to run between government offices.</p>
+      </details>
+      <details>
+        <summary>Which areas does Step Solar serve?</summary>
+        <p>We install and service rooftop solar across Uttar Pradesh and Bihar, and are based in Bhadaura, Ghazipur (UP).</p>
+      </details>
+      <details>
+        <summary>Is a site visit required before I get a quotation?</summary>
+        <p>Yes — a free, no-obligation site survey is the first step. Our surveyor checks your roof or land space, shadow-free area, structure strength and electrical connection, and only then we size your system and share an itemised quotation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="logo.jpg" alt="Step Solar logo" onerror="this.style.display='none'">
+          <b>Step Solar Energy Pvt Ltd</b>
+        </div>
+        <p><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">Satramganj Bazar, Bhadaura,<br>Uttar Pradesh – 232333 · View on Google Maps</a></p>
+        <p style="margin-top:10px;">GST: 09ABPCS3779K1ZC<br>CIN: U42201UP2025PTC217484</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">Why Solar</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+        <h4 style="margin-top:22px;">Solar Services by Location</h4>
+        <ul>
+          <li><a href="/solar-panel-installation-uttar-pradesh/">Solar Installation in Uttar Pradesh</a></li>
+          <li><a href="/solar-panel-installation-bihar/">Solar Installation in Bihar</a></li>
+          <li><a href="/solar-panel-installation-ghazipur/">Solar Installation in Ghazipur</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="#quote">Request a Quotation</a></li>
+          <li><a href="tel:+918081252114">+91 80812 52114</a></li>
+          <li><a href="mailto:sales@stepsolar.in">sales@stepsolar.in</a></li>
+          <li><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">View office on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Step Solar Energy Pvt Ltd. All rights reserved.</span>
+      <span>Freedom · Future · Savings</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ----------------- Bijli Bill Calculator ------------------ */
+  const billRange = document.getElementById('billRange');
+  const billOut = document.getElementById('billOut');
+  const sysSize = document.getElementById('sysSize');
+  const payback = document.getElementById('payback');
+  const lifeSavings = document.getElementById('lifeSavings');
+
+  function fmtINR(n){ return Math.round(n).toLocaleString('en-IN'); }
+  function updateCalc(){
+    const bill = parseInt(billRange.value, 10);
+    billOut.textContent = fmtINR(bill);
+    const unitRate = 8;
+    const unitsPerMonth = bill / unitRate;
+    const kwFromUnits = unitsPerMonth / 120;
+    const size = Math.max(1, Math.round(kwFromUnits * 2) / 2);
+    const costPerKw = 55000;
+    const systemCost = size * costPerKw;
+    const monthlySaving = bill * 0.9;
+    const annualSaving = monthlySaving * 12;
+    const paybackYears = systemCost / annualSaving;
+    const lifetime = annualSaving * 25 - systemCost;
+    sysSize.textContent = size.toFixed(1) + ' kW';
+    payback.textContent = '~' + paybackYears.toFixed(1) + ' yrs';
+    lifeSavings.textContent = '₹ ' + fmtINR(Math.max(lifetime, annualSaving * 10)) + '+';
+  }
+  billRange.addEventListener('input', updateCalc);
+  updateCalc();
+
+  /* ----------------- Gallery lightbox ----------------------- */
+  const galImages = [
+    { src:"https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1600&auto=format&fit=crop", cap:"Rooftop Installation — residential system" },
+    { src:"https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=80&w=1600&auto=format&fit=crop", cap:"Photovoltaic Cells — close-up view" },
+    { src:"https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=80&w=1600&auto=format&fit=crop", cap:"Ground-Mount Array — for farms & open land" }
+  ];
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCap = document.getElementById('lightboxCap');
+  function openLightbox(i){
+    const item = galImages[i];
+    lightboxImg.src = item.src;
+    lightboxCap.textContent = item.cap;
+    lightbox.classList.add('open');
+  }
+  function closeLightbox(){ lightbox.classList.remove('open'); }
+  lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLightbox(); });
+
+  /* ----------------- Quotation form → backend --------------- */
+  const API_BASE = window.location.origin;
+  const LEADS_URL = API_BASE + '/api/leads';
+
+  function showAlert(type, html){
+    const el = document.getElementById('formAlert');
+    el.className = 'form-alert show ' + type;
+    el.innerHTML = html;
+    el.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+  function hideAlert(){
+    document.getElementById('formAlert').className = 'form-alert';
+  }
+
+  async function handleQuote(e){
+    e.preventDefault();
+    const form = e.target;
+    const btn = document.getElementById('submitBtn');
+    hideAlert();
+
+    const fd = new FormData(form);
+    const payload = {
+      full_name: (fd.get('full_name') || '').toString().trim(),
+      phone: (fd.get('phone') || '').toString().trim(),
+      email: (fd.get('email') || '').toString().trim(),
+      state: (fd.get('state') || '').toString().trim(),
+      city: (fd.get('city') || '').toString().trim(),
+      pincode: (fd.get('pincode') || '').toString().trim(),
+      property_type: (fd.get('propertyType') || '').toString(),
+      monthly_bill: parseInt(fd.get('monthly_bill') || '0', 10),
+      roof_type: (fd.get('roofType') || '').toString(),
+      timeline: (fd.get('timeline') || '').toString(),
+      source: 'website'
+    };
+
+    if(!payload.property_type){ showAlert('error', '<b>Please select</b> a property type.'); return; }
+    if(!payload.roof_type){ showAlert('error', '<b>Please select</b> your roof type &amp; space.'); return; }
+    if(!payload.timeline){ showAlert('error', '<b>Please select</b> your installation timeline.'); return; }
+
+    btn.disabled = true;
+    const originalBtn = btn.innerHTML;
+    btn.innerHTML = '<span class="btn-spinner"></span> Sending…';
+
+    try{
+      const res = await fetch(LEADS_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json().catch(()=>({}));
+
+      if(res.ok && data.ok){
+        showAlert('success',
+          '<b>Thank you, ' + escapeHtml(payload.full_name) + '!</b><br>' +
+          'Your quotation request has been received. Our sales team will call you shortly on <b>' +
+          escapeHtml(payload.phone) + '</b> to schedule your free site survey.'
+        );
+        form.reset();
+        return;
+      }
+
+      if(res.status === 429){
+        showAlert('error',
+          '<b>Request already received.</b><br>' +
+          (data.detail || 'We already have a recent request from this phone/email. Our team will call you shortly.')
+        );
+        return;
+      }
+
+      const msg = (data && (data.detail || data.message)) || ('Something went wrong (HTTP ' + res.status + '). Please try again.');
+      showAlert('error', '<b>Could not submit.</b><br>' + escapeHtml(msg));
+    } catch(err){
+      showAlert('error',
+        '<b>Network error.</b><br>Please check your connection and try again, or call us directly.'
+      );
+    } finally{
+      btn.disabled = false;
+      btn.innerHTML = originalBtn;
+    }
+  }
+
+  function escapeHtml(s){
+    return String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
+</script>
+
+</body>
+</html>

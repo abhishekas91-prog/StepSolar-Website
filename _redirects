@@ -1,0 +1,15 @@
+# API proxy FIRST so /api/* on any domain (including admin.stepsolar.in) hits the backend
+/api/*                          https://stepsolar-backend.onrender.com/api/:splat      200
+
+# Customer tracking portal — /track/:token serves track.html
+/track/*                        /track.html                                             200
+
+# Admin subdomain → CRM (CRM is deployed separately from the StepSolar-CRM repo —
+# update the target to the CRM's deployed origin)
+https://admin.stepsolar.in/*     https://admin.stepsolar.in/crm.html                    200
+
+# Canonical domain: www → apex
+https://www.stepsolar.in/*       https://stepsolar.in/:splat                             301
+
+# Marketing website at the root
+/                               /index.html                                             200

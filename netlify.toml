@@ -1,0 +1,28 @@
+# Step Solar marketing website — static site, no build step.
+[build]
+  publish = "."
+
+# API proxy: /api/* requests reach the CRM backend (hosted on Render).
+[[redirects]]
+  from = "/api/*"
+  to = "https://stepsolar-backend.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+# Customer tracking portal — /track/:token serves track.html.
+[[redirects]]
+  from = "/track/*"
+  to = "/track.html"
+  status = 200
+
+# Canonical domain: www -> apex.
+[[redirects]]
+  from = "https://www.stepsolar.in/*"
+  to = "https://stepsolar.in/:splat"
+  status = 301
+
+# Marketing website at the root.
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200

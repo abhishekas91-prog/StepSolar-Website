@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Track Your Solar Installation — Step Solar Energy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1B6FA8; --blue-deep:#12507B;
+    --green:#3FA535; --green-deep:#2C7C24;
+    --sun:#F5A623; --brown:#8A6C3F;
+    --sand:#F4F8F4; --paper:#FFFFFF;
+    --ink:#182420; --ink-soft:#4B5A54;
+    --line: rgba(24,36,32,0.12);
+    --danger:#C24A3E; --radius:14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Inter',sans-serif; background:var(--sand); color:var(--ink); line-height:1.55; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif; letter-spacing:-0.01em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:var(--blue); text-decoration:none;}
+  .wrap{max-width:900px; margin:0 auto; padding:0 20px;}
+
+  header.top{
+    background:linear-gradient(90deg, var(--blue-deep), var(--green-deep));
+    color:#fff; padding:22px 0 34px;
+  }
+  .top-inner{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .brand{display:flex; align-items:center; gap:10px; color:#fff;}
+  .brand img{height:40px; background:#fff; border-radius:8px; padding:2px;}
+  .brand b{font-family:'Space Grotesk'; font-size:1.05rem;}
+  .brand span{display:block; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; opacity:0.85;}
+  .top-chip{background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.3); border-radius:999px; padding:7px 16px; font-size:0.82rem; font-weight:600;}
+
+  .progress-card{margin-top:-20px; background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px; box-shadow:0 18px 40px -20px rgba(18,80,123,0.28);}
+  .progress-row{display:flex; align-items:center; gap:16px; flex-wrap:wrap;}
+  .progress-num{font-family:'Space Grotesk'; font-weight:700; font-size:2.1rem; color:var(--green-deep);}
+  .progress-track{flex:1; min-width:180px; height:12px; background:var(--sand); border-radius:99px; overflow:hidden;}
+  .progress-fill{height:100%; background:linear-gradient(90deg,var(--blue),var(--green)); border-radius:99px; transition:width .6s ease;}
+  .progress-meta{flex-basis:100%; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; font-size:0.8rem; color:var(--ink-soft);}
+
+  .panel{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:24px; margin:18px 0;}
+  .panel h2{font-size:1.02rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;}
+  .section-label{font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); font-weight:700; margin-bottom:8px;}
+
+  .lead-grid{display:grid; grid-template-columns:1fr 1fr; gap:6px 18px; font-size:0.88rem;}
+  @media (max-width:600px){ .lead-grid{grid-template-columns:1fr;} }
+  .lead-grid .kv{display:flex; justify-content:space-between; gap:10px; padding:7px 0; border-bottom:1px dashed var(--line);}
+  .lead-grid .k{color:var(--ink-soft);}
+  .lead-grid .v{font-weight:600; text-align:right;}
+
+  .track-stages{display:flex; flex-direction:column; gap:2px;}
+  .tstage{display:flex; gap:14px; padding:10px 0; position:relative;}
+  .tstage:not(:last-child)::before{content:""; position:absolute; left:13px; top:34px; bottom:-4px; width:2px; background:var(--line);}
+  .tstage .tnum{flex:0 0 28px; height:28px; width:28px; border-radius:50%; border:2px solid var(--line); background:var(--paper); color:var(--ink-soft); display:flex; align-items:center; justify-content:center; font-size:0.72rem; font-weight:700; z-index:1;}
+  .tstage.done .tnum{background:var(--green-deep); border-color:var(--green-deep); color:#fff;}
+  .tstage.now .tnum{background:var(--blue); border-color:var(--blue); color:#fff; box-shadow:0 0 0 4px rgba(27,111,168,0.18);}
+  .tstage .tlabel{flex:1;}
+  .tstage .tl{font-weight:600; font-size:0.9rem;}
+  .tstage .tmeta{font-size:0.72rem; color:var(--ink-soft); margin-top:2px;}
+  .tstage .tstat{font-size:0.68rem; font-weight:700; padding:2px 9px; border-radius:999px; align-self:flex-start;}
+  .tstat.Completed{background:rgba(63,165,53,0.14); color:var(--green-deep);}
+  .tstat.In-Progress{background:rgba(27,111,168,0.14); color:var(--blue-deep);}
+  .tstat.Pending{background:rgba(24,36,32,0.08); color:var(--ink-soft);}
+
+  .doc-list{display:flex; flex-direction:column; gap:8px;}
+  .doc-item{display:flex; align-items:center; justify-content:space-between; background:var(--sand); border-radius:10px; padding:10px 14px; font-size:0.85rem; gap:10px; flex-wrap:wrap;}
+  .doc-item b{color:var(--ink);}
+  .doc-item .dim{color:var(--ink-soft); font-size:0.72rem;}
+  .doc-item a{font-weight:600; font-size:0.8rem;}
+
+  .survey-box{background:var(--sand); border-radius:10px; padding:14px 16px; font-size:0.86rem;}
+  .survey-box .kv{display:flex; justify-content:space-between; gap:12px; padding:4px 0;}
+
+  .inv-item{display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px dashed var(--line); font-size:0.85rem; flex-wrap:wrap;}
+  .inv-item:last-child{border-bottom:none;}
+  .itype-chip{display:inline-block; padding:2px 8px; border-radius:6px; font-size:0.64rem; font-weight:700; font-family:'IBM Plex Mono';}
+  .it-panel{background:rgba(63,165,53,0.12); color:var(--green-deep);}
+  .it-inverter{background:rgba(27,111,168,0.12); color:var(--blue-deep);}
+  .it-structure{background:rgba(245,166,35,0.18); color:#8a5b0c;}
+  .it-bos{background:rgba(138,108,63,0.18); color:var(--brown);}
+  .it-other{background:rgba(24,36,32,0.08); color:var(--ink-soft);}
+
+  .quote-total{font-family:'Space Grotesk'; font-weight:700; font-size:1.4rem; color:var(--green-deep);}
+
+  .state{text-align:center; padding:80px 20px;}
+  .state h1{font-size:1.5rem; margin:18px 0 8px;}
+  .state p{color:var(--ink-soft); max-width:420px; margin:0 auto 22px;}
+  .state .big{font-size:2.6rem;}
+  .spinner{width:34px; height:34px; border-radius:50%; border:3px solid var(--line); border-top-color:var(--blue); animation:spin .8s linear infinite; margin:0 auto;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  footer{padding:26px 0; text-align:center; font-size:0.76rem; color:var(--ink-soft);}
+  .toast{position:fixed; bottom:22px; right:22px; background:var(--ink); color:#fff; padding:12px 18px; border-radius:10px; font-size:0.85rem; z-index:200; display:none;}
+  .toast.show{display:block;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <img src="/logo.jpg" alt="Step Solar" onerror="this.style.display='none'">
+      <div><b>Step Solar Energy</b><span>Installation Tracker</span></div>
+    </div>
+    <a class="top-chip" href="/">← Back to stepsolar.in</a>
+  </div>
+</header>
+
+<main class="wrap" id="app">
+  <div class="state" id="loadingState">
+    <div class="spinner"></div>
+    <h1>Loading your installation status…</h1>
+  </div>
+  <div class="state" id="errorState" style="display:none;">
+    <div class="big">🔒</div>
+    <h1 id="errorTitle">Tracking link not found</h1>
+    <p id="errorText">This link is invalid or has been disabled. Please check the link from your WhatsApp message, or contact Step Solar.</p>
+    <a class="top-chip" href="/" style="display:inline-block; padding:10px 20px;">Visit stepsolar.in</a>
+  </div>
+  <div id="content" style="display:none;"></div>
+</main>
+
+<footer>
+  <div class="wrap">Step Solar Energy Pvt Ltd · Satramganj Bazar, Bhadaura, Uttar Pradesh – 232333 · GST 09ABPCS3779K1ZC</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  var API_BASE = window.location.origin;
+  function tokenFromPath(){
+    var m = window.location.pathname.match(/\/track\/([A-Za-z0-9]+)\/?$/);
+    return m ? m[1] : null;
+  }
+  var token = tokenFromPath();
+  if(!token){
+    // Allow /track.html?token= fallback
+    token = new URLSearchParams(window.location.search).get('token');
+  }
+  if(!token){ showError(); return; }
+  load(token);
+
+  function esc(v){
+    return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function fmtINR(n){ return '₹' + Math.round(n||0).toLocaleString('en-IN'); }
+  function fmtDate(iso){
+    if(!iso) return '—';
+    var d = new Date(iso);
+    return d.toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+  }
+  function statusClass(s){ return (s==='In Progress') ? 'In-Progress' : (s||'Pending'); }
+
+  function showToast(m){ var t=document.getElementById('toast'); t.textContent=m; t.className='toast show'; clearTimeout(window.__tt); window.__tt=setTimeout(function(){t.classList.remove('show');},2600); }
+
+  async function load(tok){
+    try{
+      var res = await fetch(API_BASE + '/api/track/' + encodeURIComponent(tok));
+      if(res.status === 404){ showError(); return; }
+      var data = await res.json();
+      if(!data.ok){ showError(); return; }
+      render(data);
+    }catch(e){
+      document.getElementById('loadingState').style.display='none';
+      var es=document.getElementById('errorState'); es.style.display='block';
+      document.getElementById('errorTitle').textContent='Could not load your status';
+      document.getElementById('errorText').textContent='We hit a network error while fetching your status. Please try again in a moment, or contact Step Solar.';
+    }
+  }
+
+  function showError(){
+    document.getElementById('loadingState').style.display='none';
+    document.getElementById('errorState').style.display='block';
+  }
+
+  function render(d){
+    document.getElementById('loadingState').style.display='none';
+    var app = document.getElementById('content');
+    app.style.display='block';
+    var lead = d.lead;
+    var survey = d.survey;
+    var quote = d.quotation;
+    var stages = d.stages || [];
+
+    var stageHtml = stages.map(function(s,i){
+      var cls = s.status==='Completed'?'done':(s.status==='In Progress'?'now':'');
+      var stat = '<span class="tstat '+statusClass(s.status)+'">'+(s.status||'Pending')+'</span>';
+      var note = s.notes ? '<div class="tmeta" style="color:var(--ink-soft);">'+esc(s.notes)+'</div>' : '';
+      return '<div class="tstage '+cls+'"><div class="tnum">'+(s.status==='Completed'?'✓':(i+1))+'</div>'+
+        '<div class="tlabel"><div class="tl">'+esc(s.label)+'</div>'+
+        '<div class="tmeta">'+fmtDate(s.updatedAt)+(survey&&i===1&&survey.scheduled_at?' · Scheduled '+fmtDate(survey.scheduled_at):'')+'</div>'+note+'</div>'+stat+'</div>';
+    }).join('');
+
+    var surveyHtml = survey ? '<div class="panel"><h2>📋 Site Survey</h2>'+
+      '<div class="survey-box">'+
+      '<div class="kv"><span class="k">Scheduled</span><b>'+fmtDate(survey.scheduled_at)+'</b></div>'+
+      (survey.engineer_name?'<div class="kv"><span class="k">Engineer</span><b>'+esc(survey.engineer_name)+'</b></div>':'')+
+      (survey.engineer_phone?'<div class="kv"><span class="k">Engineer Phone</span><b>'+esc(survey.engineer_phone)+'</b></div>':'')+
+      '</div></div>' : '';
+
+    var quoteHtml = quote ? '<div class="panel"><h2>💡 Your Quotation</h2>'+
+      '<div class="kv" style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">'+
+      '<span style="color:var(--ink-soft); font-size:0.85rem;">Status: <b>'+esc(quote.status)+'</b> · rev '+esc(quote.revision||1)+'</span>'+
+      '<span class="quote-total">'+fmtINR(quote.grandTotal)+'</span></div>'+
+      '<p style="font-size:0.76rem; color:var(--ink-soft); margin-top:8px;">Itemised breakdown and taxes are shared with you directly by our sales team.</p></div>' : '';
+
+    var docs = d.documents || [];
+    var docHtml = '<div class="panel"><h2>📄 Your Documents</h2>'+
+      (docs.length===0 ? '<p style="font-size:0.85rem; color:var(--ink-soft);">No documents shared yet. Quotation, agreement and warranty PDFs appear here as they are uploaded.</p>'
+        : '<div class="doc-list">'+docs.map(function(doc){
+            return '<div class="doc-item"><span><b>'+esc(doc.name)+'</b> <span class="dim">· '+esc(doc.stage||'')+' · '+fmtDate(doc.at)+'</span></span>'+
+              '<a href="/api/track/'+encodeURIComponent(token)+'/documents/'+encodeURIComponent(doc.id)+'" download>Download ↓</a></div>';
+          }).join('')+'</div>')+'</div>';
+
+    var inv = d.inventory || [];
+    var invHtml = '<div class="panel"><h2>📦 Material Dispatch</h2>'+
+      (inv.length===0 ? '<p style="font-size:0.85rem; color:var(--ink-soft);">Nothing dispatched yet. Once your panels and inverter leave our store, they appear here with serial numbers.</p>'
+        : inv.map(function(i){
+            var chip = '<span class="itype-chip it-'+esc(i.item_type||'other')+'">'+esc(i.item_type||'other').toUpperCase()+'</span>';
+            return '<div class="inv-item">'+chip+'<b>'+esc(i.name)+'</b>'+(i.serial?'<span class="mono" style="color:var(--blue-deep); font-size:0.76rem;">SN: '+esc(i.serial)+'</span>':'')+'<span style="font-size:0.74rem;color:var(--ink-soft);">×'+esc(i.quantity)+' · '+esc(i.status||'allocated')+'</span></div>';
+          }).join(''))+'</div>';
+
+    app.innerHTML =
+      '<div class="progress-card">'+
+        '<div class="progress-row">'+
+          '<div class="progress-num">'+esc(d.progress||0)+'%</div>'+
+          '<div class="progress-track"><div class="progress-fill" style="width:'+Math.max(4,esc(d.progress||0))+'%"></div></div>'+
+          '<div class="progress-meta">'+
+            '<span><b>'+esc(lead.full_name)+'</b> · '+esc(lead.code)+'</span>'+
+            '<span>'+esc(lead.city||'')+', '+esc(lead.state||'')+'</span>'+
+            '<span>📞 '+esc(lead.phone_masked||'')+'</span>'+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+
+      '<div class="panel"><h2>Your Installation Journey</h2><div class="track-stages">'+stageHtml+'</div></div>'+
+      surveyHtml+quoteHtml+docHtml+invHtml+
+      '<div class="panel"><h2>Need help?</h2><p style="font-size:0.88rem; color:var(--ink-soft);">Questions about your installation? Message us on the same WhatsApp number that sent you this link, or email <b>hello@stepsolar.in</b>.</p></div>';
+  }
+})();
+</script>
+</body>
+</html>

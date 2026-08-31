@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /track/
+Disallow: /crm.html
+Disallow: /Invoice.html
+Disallow: /letterhead.html
+
+Sitemap: https://stepsolar.in/sitemap.xml
