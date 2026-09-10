@@ -5,7 +5,26 @@
 
   "rewrites": [
     { "source": "/api/:path*", "destination": "https://stepsolar-backend.onrender.com/api/:path*" },
-    { "source": "/track/:path*", "destination": "/track.html" }
+    { "source": "/track/:path*", "destination": "/track.html" },
+    { "source": "/solar-panel-installation-:city/", "destination": "/locations.html?city=:city" },
+    { "source": "/solar-panel-installation-:city", "destination": "/locations.html?city=:city" },
+    { "source": "/solar-panel-installation-:city/:path*", "destination": "/locations.html?city=:city" },
+    { "source": "/locations", "destination": "/locations.html" },
+    { "source": "/locations/", "destination": "/locations.html" },
+    { "source": "/service-areas", "destination": "/locations.html" },
+    { "source": "/service-areas/", "destination": "/locations.html" },
+    { "source": "/why-solar", "destination": "/why-solar.html" },
+    { "source": "/why-solar/", "destination": "/why-solar.html" },
+    { "source": "/pm-surya-ghar", "destination": "/pm-surya-ghar.html" },
+    { "source": "/pm-surya-ghar/", "destination": "/pm-surya-ghar.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/gallery/", "destination": "/gallery.html" },
+    { "source": "/our-process", "destination": "/our-process.html" },
+    { "source": "/our-process/", "destination": "/our-process.html" },
+    { "source": "/solutions", "destination": "/solutions.html" },
+    { "source": "/solutions/", "destination": "/solutions.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/contact/", "destination": "/contact.html" }
   ],
 
   "headers": [
