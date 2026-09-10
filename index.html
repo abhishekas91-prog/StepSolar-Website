@@ -16,8 +16,8 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solar Panel Installation in Uttar Pradesh &amp; Bihar | Step Solar Energy</title>
-<meta name="description" content="Step Solar Energy installs rooftop solar panels for homes, shops &amp; farms across UP &amp; Bihar. Free site survey, subsidy &amp; net-metering support, transparent pricing. Get a free quotation today.">
+<title>Solar Panel Installation, 3D Solar Power Plant &amp; PM Surya Ghar Yojana | Step Solar Energy UP &amp; Bihar</title>
+<meta name="description" content="Step Solar Energy installs rooftop solar &amp; 3D solar power plants for homes, shops &amp; farms across UP &amp; Bihar. Up to ₹78,000 PM Surya Ghar DBT subsidy, free site survey &amp; net-metering.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://stepsolar.in/">
 <meta name="theme-color" content="#1B6FA8">
@@ -26,33 +26,35 @@
 <meta name="geo.placename" content="Bhadaura, Ghazipur, Uttar Pradesh">
 <meta name="geo.position" content="25.5833;83.5333">
 <meta name="ICBM" content="25.5833, 83.5333">
-<meta name="keywords" content="solar panel installation, rooftop solar, solar solutions, solar panel price, solar installation company Uttar Pradesh, solar subsidy, net metering, solar water pump, PM Surya Ghar">
+<meta name="keywords" content="solar panel installation, 3D solar power plant, renewable energy, PM Surya Ghar Muft Bijli Yojana, rooftop solar, solar subsidy UP Bihar, net metering, solar water pump">
+
+<!-- Three.js 3D WebGL Engine -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <!-- Open Graph (Facebook / LinkedIn / WhatsApp) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Step Solar Energy">
-<meta property="og:title" content="Solar Panel Installation in Uttar Pradesh &amp; Bihar | Step Solar Energy">
-<meta property="og:description" content="Rooftop solar for homes, shops &amp; farms — free site survey, subsidy handling, transparent quotation. Get a free quote today.">
+<meta property="og:title" content="3D Solar Power Plant &amp; PM Surya Ghar Yojana | Step Solar Energy">
+<meta property="og:description" content="Rooftop solar for homes, shops &amp; farms — free site survey, up to ₹78,000 PM Surya Ghar subsidy, transparent quotation.">
 <meta property="og:url" content="https://stepsolar.in/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1200&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Solar panels installed on a rooftop by Step Solar Energy">
+<meta property="og:image:alt" content="Solar power plant by Step Solar Energy">
 <meta property="og:locale" content="en_IN">
 <meta property="og:locale:alternate" content="hi_IN">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Solar Panel Installation in Uttar Pradesh &amp; Bihar | Step Solar Energy">
+<meta name="twitter:title" content="3D Solar Power Plant &amp; PM Surya Ghar Yojana | Step Solar Energy">
 <meta name="twitter:description" content="Rooftop solar for homes, shops &amp; farms — free site survey, subsidy handling, transparent quotation.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1200&auto=format&fit=crop">
-<meta name="twitter:image:alt" content="Solar panels installed on a rooftop by Step Solar Energy">
+<meta name="twitter:image:alt" content="Solar power plant by Step Solar Energy">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="dns-prefetch" href="https://images.unsplash.com">
-<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=800&auto=format&fit=crop">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
 <!-- Structured data: Organization, LocalBusiness, Services, Product, FAQ -->
@@ -309,6 +311,10 @@
   .btn-ghost{background:transparent; border:1.5px solid var(--line); color:var(--ink);}
   .btn-ghost:hover{border-color:var(--blue); color:var(--blue);}
   .menu-toggle{display:none; background:none; border:none; font-size:1.6rem; cursor:pointer;}
+  .mobile-nav{display:none; flex-direction:column; padding:16px 24px 24px; background:rgba(244,248,244,0.98); border-bottom:1px solid var(--line); gap:14px;}
+  .mobile-nav.open{display:flex;}
+  .mobile-nav a{font-size:1rem; font-weight:500; color:var(--ink-soft);}
+  .mobile-nav a:hover{color:var(--blue);}
   @media (max-width:860px){
     nav.links{display:none;}
     .menu-toggle{display:block;}
@@ -316,16 +322,36 @@
 
   .hero{
     position:relative; overflow:hidden;
-    padding:72px 0 90px;
+    padding:64px 0 84px;
     background:
-      radial-gradient(680px 420px at 88% -10%, rgba(63,165,53,0.16), transparent 60%),
-      radial-gradient(600px 380px at 8% 110%, rgba(27,111,168,0.14), transparent 60%);
+      radial-gradient(680px 420px at 88% -10%, rgba(63,165,53,0.18), transparent 60%),
+      radial-gradient(600px 380px at 8% 110%, rgba(27,111,168,0.16), transparent 60%);
   }
-  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;}
-  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr;} }
+  .hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:44px; align-items:center;}
+  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr; gap:36px;} }
+  
+  .pm-scheme-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:6px 14px; border-radius:999px;
+    background:rgba(63,165,53,0.12); border:1px solid rgba(63,165,53,0.35);
+    font-size:0.75rem; font-weight:600; color:var(--green-deep);
+    text-transform:uppercase; letter-spacing:0.06em; font-family:'IBM Plex Mono';
+    margin-bottom:14px; box-shadow:0 2px 10px rgba(63,165,53,0.10);
+  }
+  .pm-pulse{
+    width:8px; height:8px; border-radius:50%; background:var(--green);
+    box-shadow:0 0 0 0 rgba(63,165,53,0.7);
+    animation:pmPulse 1.8s infinite;
+  }
+  @keyframes pmPulse{
+    0%{box-shadow:0 0 0 0 rgba(63,165,53,0.7);}
+    70%{box-shadow:0 0 0 8px rgba(63,165,53,0);}
+    100%{box-shadow:0 0 0 0 rgba(63,165,53,0);}
+  }
+
   .hero h1{
-    font-size:clamp(2.3rem, 4.4vw, 3.5rem);
-    font-weight:700; line-height:1.05; margin:18px 0 20px;
+    font-size:clamp(2.3rem, 4.2vw, 3.4rem);
+    font-weight:700; line-height:1.06; margin:14px 0 18px;
     color:var(--ink);
   }
   .hero h1 em{
@@ -333,57 +359,327 @@
     background:linear-gradient(92deg, var(--blue) 0%, var(--green) 100%);
     -webkit-background-clip:text; background-clip:text; color:transparent;
   }
-  .hero p.lead{font-size:1.08rem; color:var(--ink-soft); max-width:520px; margin-bottom:30px;}
-  .hero-cta{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px;}
-  .trust-row{display:flex; gap:22px; flex-wrap:wrap; font-size:0.78rem; color:var(--ink-soft);}
+  .hero p.lead{font-size:1.05rem; color:var(--ink-soft); max-width:540px; margin-bottom:20px; line-height:1.6;}
+  
+  .hero-chips{
+    display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px;
+  }
+  .hero-chips .chip{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:6px 12px; border-radius:8px; background:rgba(255,255,255,0.85);
+    border:1px solid var(--line); font-size:0.78rem; font-weight:600; color:var(--ink);
+    backdrop-filter:blur(6px); box-shadow:0 2px 6px rgba(0,0,0,0.04);
+    transition:transform .18s, border-color .18s;
+  }
+  .hero-chips .chip:hover{transform:translateY(-2px); border-color:var(--blue);}
+
+  .hero-cta{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:28px;}
+  .btn-pm{
+    background:linear-gradient(135deg, #1B6FA8, #2C7C24); color:#fff;
+    box-shadow:0 6px 20px -6px rgba(27,111,168,0.5);
+  }
+  .btn-pm:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px -6px rgba(44,124,36,0.6);
+  }
+  .trust-row{display:flex; gap:18px; flex-wrap:wrap; font-size:0.78rem; color:var(--ink-soft);}
   .trust-row b{color:var(--ink); font-weight:600;}
 
-  .hero-photo{
-    position:absolute; right:-40px; top:18px; width:230px; z-index:0;
-    border-radius:18px; overflow:hidden; box-shadow:0 24px 50px -18px rgba(18,50,30,0.45);
-    transform:rotate(4deg); transition:transform .35s ease;
-    border:5px solid #fff;
+  /* --- 3D Interactive Stage in Hero -------------------------------- */
+  .stage-3d-wrap{
+    position:relative; width:100%;
+    perspective:1200px;
   }
-  .hero-photo img{height:170px; object-fit:cover; width:100%;}
-  .hero-photo:hover{transform:rotate(0deg) scale(1.04);}
-  .hero-photo .cap{
-    position:absolute; bottom:0; left:0; right:0; padding:8px 10px;
-    background:linear-gradient(0deg, rgba(0,0,0,0.65), transparent);
-    color:#fff; font-size:0.66rem; font-family:'IBM Plex Mono'; letter-spacing:0.03em;
+  .stage-3d-card{
+    position:relative; width:100%; height:470px; min-height:420px;
+    border-radius:24px; overflow:hidden;
+    background:radial-gradient(ellipse at 50% 25%, #F7FAF7 0%, #E9F2F7 60%, #E2EBE5 100%);
+    border:1.5px solid rgba(27,111,168,0.25);
+    box-shadow:0 24px 60px -18px rgba(18,80,123,0.28), 0 0 0 1px rgba(255,255,255,0.8) inset;
+    transition:box-shadow .3s ease;
   }
-  @media (max-width:960px){ .hero-photo{display:none;} }
+  #solar3d-canvas{
+    width:100%; height:100%; display:block;
+    cursor:grab; outline:none;
+  }
+  #solar3d-canvas:active{cursor:grabbing;}
+  
+  .stage-hud{
+    position:absolute; left:0; right:0; z-index:10; pointer-events:none;
+    padding:14px 16px; display:flex; justify-content:space-between; align-items:flex-start;
+  }
+  .stage-hud *{pointer-events:auto;}
+  .stage-hud.top{top:0;}
+  .stage-hud.bottom{
+    bottom:0; flex-direction:column; gap:8px; align-items:stretch;
+    background:linear-gradient(to top, rgba(233,242,247,0.92) 20%, transparent);
+    padding-bottom:12px;
+  }
 
-  .calc{
-    background:var(--paper); border-radius:20px; padding:28px 26px 26px;
-    border:1px solid var(--line); box-shadow:0 20px 50px -20px rgba(18,80,123,0.25);
-    position:relative;
+  .hud-stat{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:8px 14px; border-radius:12px;
+    background:rgba(255,255,255,0.90); backdrop-filter:blur(10px);
+    border:1px solid rgba(27,111,168,0.2); box-shadow:0 4px 14px rgba(0,0,0,0.06);
   }
-  .calc-top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;}
-  .calc-top h3{font-size:1.05rem;}
-  .calc-top span{font-size:0.7rem; color:var(--ink-soft); font-family:'IBM Plex Mono';}
-  .calc label{font-size:0.82rem; color:var(--ink-soft); font-weight:500; display:block; margin:18px 0 8px;}
-  .bill-value{font-family:'Space Grotesk'; font-weight:700; font-size:1.6rem; color:var(--blue-deep);}
+  .hud-live-dot{
+    width:8px; height:8px; border-radius:50%; background:#00C853;
+    box-shadow:0 0 8px #00E676; animation:pulseDot 1.4s infinite;
+  }
+  @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.8);}}
+  .hud-label{font-size:0.65rem; font-family:'IBM Plex Mono'; font-weight:600; color:var(--ink-soft); letter-spacing:0.06em;}
+  .hud-val{font-family:'Space Grotesk'; font-size:1.05rem; font-weight:700; color:var(--blue-deep);}
+  .hud-sub{font-size:0.65rem; color:var(--green-deep); font-family:'IBM Plex Mono'; margin-left:2px;}
+
+  .hud-views{display:flex; gap:6px;}
+  .view-btn{
+    background:rgba(255,255,255,0.88); backdrop-filter:blur(8px);
+    border:1px solid var(--line); border-radius:10px;
+    padding:7px 11px; font-size:0.75rem; font-weight:600; color:var(--ink);
+    cursor:pointer; transition:all .18s ease; font-family:'Inter';
+  }
+  .view-btn:hover{background:#fff; border-color:var(--blue); color:var(--blue); transform:translateY(-1px);}
+  .view-btn.active{
+    background:linear-gradient(92deg, var(--blue), var(--green-deep)); color:#fff;
+    border-color:transparent; box-shadow:0 3px 10px rgba(27,111,168,0.3);
+  }
+
+  .sun-controller{
+    background:rgba(255,255,255,0.90); backdrop-filter:blur(10px);
+    border:1px solid rgba(27,111,168,0.18); border-radius:12px;
+    padding:9px 14px; box-shadow:0 4px 16px rgba(0,0,0,0.06);
+  }
+  .sun-meta{
+    display:flex; justify-content:space-between; font-size:0.75rem;
+    margin-bottom:6px; color:var(--ink-soft);
+  }
+  .sun-meta b{color:var(--blue-deep); font-family:'IBM Plex Mono';}
+  .hud-hint{
+    font-size:0.68rem; color:var(--ink-soft); font-family:'IBM Plex Mono';
+    text-align:center; opacity:0.85;
+  }
+
+  /* --- Bijli Bill & PM Surya Ghar Subsidy Calculator ---------------- */
+  .calc{
+    background:var(--paper); border-radius:24px; padding:32px 30px;
+    border:1.5px solid rgba(27,111,168,0.18);
+    box-shadow:0 24px 60px -20px rgba(18,80,123,0.22);
+    position:relative; transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .calc-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; flex-wrap:wrap; gap:10px;}
+  .calc-top h3{font-size:1.25rem;}
+  .pm-calc-pill{
+    background:rgba(63,165,53,0.12); color:var(--green-deep);
+    border:1px solid rgba(63,165,53,0.3); padding:4px 12px;
+    border-radius:999px; font-size:0.7rem; font-weight:700;
+  }
+  .calc label{font-size:0.84rem; color:var(--ink-soft); font-weight:500; display:block; margin:16px 0 8px;}
+  .bill-value{font-family:'Space Grotesk'; font-weight:700; font-size:1.8rem; color:var(--blue-deep);}
+  
+  .calc-state-toggle{
+    display:flex; gap:10px; margin:8px 0 16px;
+  }
+  .state-btn{
+    flex:1; padding:9px 12px; border-radius:10px; border:1.5px solid var(--line);
+    background:var(--sand); color:var(--ink); font-size:0.83rem; font-weight:600;
+    cursor:pointer; transition:all .18s ease; font-family:'Inter'; text-align:center;
+  }
+  .state-btn:hover{border-color:var(--blue);}
+  .state-btn.active{
+    background:linear-gradient(92deg, var(--blue), var(--green-deep));
+    color:#fff; border-color:transparent;
+    box-shadow:0 3px 12px rgba(27,111,168,0.25);
+  }
+
+  .calc-main-grid{
+    display:grid; grid-template-columns:1fr 1.35fr; gap:32px; margin-top:20px; align-items:start;
+  }
+  @media (max-width:900px){ .calc-main-grid{grid-template-columns:1fr;} }
+  
+  .calc-subsidy-highlight{
+    margin-top:16px; background:linear-gradient(135deg, rgba(63,165,53,0.12), rgba(27,111,168,0.08));
+    border:1.5px dashed rgba(63,165,53,0.4); border-radius:14px; padding:14px 16px;
+  }
+  .subsidy-badge-tag{
+    font-size:0.66rem; font-family:'IBM Plex Mono'; font-weight:700;
+    color:var(--green-deep); letter-spacing:0.1em;
+  }
+  .subsidy-sum{display:flex; flex-direction:column; gap:2px; margin-top:4px;}
+  .sub-amount{font-family:'Space Grotesk'; font-weight:700; font-size:1.75rem; color:var(--green-deep);}
+  .sub-split{
+    display:flex; align-items:center; gap:8px; margin:6px 0 4px; flex-wrap:wrap; font-size:0.8rem;
+  }
+  .split-tag{
+    background:rgba(255,255,255,0.85); padding:3px 9px; border-radius:8px; font-size:0.75rem; color:var(--ink);
+    border:1px solid rgba(63,165,53,0.25);
+  }
+  .split-tag b{color:var(--green-deep); font-family:'IBM Plex Mono';}
+  .split-plus{font-weight:700; color:var(--green-deep); font-size:0.95rem;}
+  .sub-note{font-size:0.75rem; color:var(--ink-soft); line-height:1.4;}
+
   input[type=range]{
     -webkit-appearance:none; width:100%; height:6px; border-radius:4px;
     background:linear-gradient(90deg, var(--blue), var(--green));
     outline:none;
   }
   input[type=range]::-webkit-slider-thumb{
-    -webkit-appearance:none; width:20px; height:20px; border-radius:50%;
+    -webkit-appearance:none; width:22px; height:22px; border-radius:50%;
     background:#fff; border:4px solid var(--green-deep); cursor:pointer;
     box-shadow:0 2px 6px rgba(0,0,0,0.25);
   }
-  .calc-results{
-    margin-top:22px; display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  
+  .calc-results-enhanced{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:12px;
   }
+  @media (max-width:540px){ .calc-results-enhanced{grid-template-columns:1fr;} }
+  
   .result-box{
-    background:var(--sand); border-radius:12px; padding:14px 14px;
-    border:1px solid var(--line);
+    background:var(--sand); border-radius:14px; padding:14px 16px;
+    border:1px solid var(--line); transition:all .18s;
   }
-  .result-box .k{font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); font-weight:600;}
-  .result-box .v{font-family:'IBM Plex Mono'; font-weight:600; font-size:1.25rem; margin-top:4px; color:var(--green-deep);}
-  .result-box.wide{grid-column:1/-1; background:linear-gradient(90deg, rgba(27,111,168,0.08), rgba(63,165,53,0.10));}
-  .calc-note{font-size:0.7rem; color:var(--ink-soft); margin-top:14px; line-height:1.5;}
+  .result-box .k{font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); font-weight:600;}
+  .result-box .v{font-family:'IBM Plex Mono'; font-weight:700; font-size:1.25rem; margin-top:4px; color:var(--ink);}
+  .result-box .sub-k{font-size:0.68rem; color:var(--ink-soft); margin-top:2px;}
+  .result-box.highlight-green{
+    background:rgba(63,165,53,0.1); border-color:rgba(63,165,53,0.3);
+  }
+  .result-box.highlight-green .v{color:var(--green-deep);}
+  .result-box.highlight-emerald{
+    background:rgba(44,124,36,0.1); border-color:rgba(44,124,36,0.3);
+  }
+  .result-box.highlight-emerald .v{color:var(--green-deep);}
+  .result-box.highlight-blue{
+    background:rgba(27,111,168,0.1); border-color:rgba(27,111,168,0.3);
+  }
+  .result-box.highlight-blue .v{color:var(--blue);}
+  .result-box.wide{
+    grid-column:1/-1;
+    background:linear-gradient(90deg, rgba(27,111,168,0.1), rgba(63,165,53,0.12));
+    border:1px solid rgba(63,165,53,0.25);
+  }
+  .result-box.wide .v{color:var(--green-deep); font-size:1.45rem;}
+
+  .calc-footer-row{
+    margin-top:22px; padding-top:16px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+  }
+  .calc-footer-row p{flex:1; min-width:280px; font-size:0.73rem; color:var(--ink-soft); line-height:1.5;}
+
+  /* --- Dedicated PM Surya Ghar & State Subsidy Section --------------- */
+  .pm-section{
+    background:linear-gradient(180deg, var(--paper) 0%, var(--sand) 100%);
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  }
+  .pm-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:36px;
+  }
+  @media (max-width:960px){ .pm-grid{grid-template-columns:1fr;} }
+
+  /* State Government Top-up Section */
+  .state-sub-container{
+    margin-top:54px; padding-top:42px; border-top:1px solid var(--line);
+  }
+  .state-sub-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:24px;
+  }
+  @media (max-width:840px){ .state-sub-grid{grid-template-columns:1fr;} }
+  .state-sub-card{
+    background:var(--paper); border:1.5px solid var(--line); border-radius:20px;
+    padding:26px 24px; position:relative; transition:all .2s ease;
+    box-shadow:0 10px 30px -10px rgba(0,0,0,0.05);
+  }
+  .state-sub-card:hover{
+    transform:translateY(-4px); border-color:var(--green);
+    box-shadow:0 16px 36px -10px rgba(63,165,53,0.18);
+  }
+  .state-flag-badge{
+    display:inline-flex; align-items:center; gap:6px; font-size:0.75rem;
+    font-family:'IBM Plex Mono'; font-weight:700; color:var(--blue-deep);
+    background:rgba(27,111,168,0.12); padding:4px 10px; border-radius:999px; margin-bottom:12px;
+  }
+  .state-sub-card h3{font-size:1.2rem; margin-bottom:4px;}
+  .state-sub-card p.agency{font-size:0.78rem; color:var(--ink-soft); font-family:'IBM Plex Mono'; margin-bottom:16px;}
+  .sub-tier-table{
+    width:100%; border-collapse:collapse; margin-bottom:16px; font-size:0.83rem;
+  }
+  .sub-tier-table th{
+    text-align:left; padding:8px 10px; background:var(--sand); color:var(--ink-soft);
+    font-family:'IBM Plex Mono'; font-size:0.7rem; text-transform:uppercase; border-bottom:1px solid var(--line);
+  }
+  .sub-tier-table td{
+    padding:10px 10px; border-bottom:1px solid var(--line); color:var(--ink);
+  }
+  .sub-tier-table tr:last-child td{border-bottom:none;}
+  .sub-tier-table b{color:var(--green-deep); font-family:'IBM Plex Mono';}
+  .discom-tags{
+    display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;
+  }
+  .discom-tag{
+    font-size:0.68rem; font-family:'IBM Plex Mono'; padding:3px 7px;
+    border-radius:6px; background:var(--sand); border:1px solid var(--line); color:var(--ink-soft);
+  }
+  .pm-card{
+    background:var(--paper); border:1.5px solid var(--line); border-radius:20px;
+    padding:28px 24px; position:relative; display:flex; flex-direction:column;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    box-shadow:0 10px 30px -10px rgba(0,0,0,0.05);
+  }
+  .pm-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px -12px rgba(27,111,168,0.18);
+    border-color:var(--blue);
+  }
+  .pm-card.featured{
+    border-color:var(--green); background:linear-gradient(180deg, #FFFFFF 0%, #F4FAF4 100%);
+    box-shadow:0 16px 40px -10px rgba(63,165,53,0.22);
+  }
+  .pm-badge-star{
+    position:absolute; top:-12px; right:20px;
+    background:linear-gradient(90deg, var(--green-deep), var(--green));
+    color:#fff; font-size:0.65rem; font-weight:700; font-family:'IBM Plex Mono';
+    padding:4px 10px; border-radius:999px; letter-spacing:0.06em;
+    box-shadow:0 4px 12px rgba(63,165,53,0.4);
+  }
+  .pm-card-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;}
+  .pm-capacity{font-family:'Space Grotesk'; font-weight:700; font-size:1.25rem; color:var(--ink);}
+  .pm-sub-tag{
+    background:rgba(63,165,53,0.12); color:var(--green-deep);
+    font-size:0.75rem; font-family:'IBM Plex Mono'; font-weight:700;
+    padding:4px 9px; border-radius:8px;
+  }
+  .pm-price{font-family:'Space Grotesk'; font-weight:700; font-size:2rem; color:var(--green-deep); margin-bottom:4px;}
+  .pm-price span{font-size:0.75rem; font-weight:500; color:var(--ink-soft); font-family:'Inter'; display:block;}
+  .pm-state-topup{font-size:0.76rem; font-weight:600; color:var(--blue); margin-bottom:14px;}
+  .pm-features{list-style:none; margin:16px 0 24px; display:flex; flex-direction:column; gap:10px; flex:1;}
+  .pm-features li{font-size:0.88rem; color:var(--ink-soft); display:flex; gap:8px; align-items:flex-start;}
+  .pm-features li::before{content:"✓"; color:var(--green-deep); font-weight:700;}
+  .pm-card-btn{width:100%; text-align:center;}
+
+  .pm-steps-container{margin-top:64px; padding-top:40px; border-top:1px solid var(--line);}
+  .pm-steps-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:24px;
+  }
+  @media (max-width:900px){ .pm-steps-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:540px){ .pm-steps-grid{grid-template-columns:1fr;} }
+  .pm-step-item{
+    background:var(--paper); border:1px solid var(--line); border-radius:16px;
+    padding:22px 18px; position:relative; transition:all .2s;
+  }
+  .pm-step-item:hover{transform:translateY(-4px); border-color:var(--green); box-shadow:0 12px 24px -8px rgba(0,0,0,0.08);}
+  .pm-step-num{
+    width:36px; height:36px; border-radius:10px;
+    background:linear-gradient(135deg, var(--blue), var(--green));
+    color:#fff; font-family:'IBM Plex Mono'; font-weight:700; font-size:0.88rem;
+    display:flex; align-items:center; justify-content:center; margin-bottom:14px;
+  }
+  .pm-step-item h4{font-size:0.98rem; margin-bottom:6px;}
+  .pm-step-item p{font-size:0.83rem; color:var(--ink-soft); line-height:1.5;}
+
+  /* --- 3D Tilt Card Base ------------------------------------------- */
+  [data-tilt]{
+    transform-style:preserve-3d;
+    transition:transform 0.18s cubic-bezier(0.2, 0, 0.2, 1);
+  }
 
   .pillars{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
   .pillars-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border-radius:16px; overflow:hidden;}
@@ -601,271 +897,187 @@
 
 <header>
   <div class="wrap nav">
-    <a href="#top" class="brand" data-testid="brand-link">
+    <a href="index.html" class="brand" data-testid="brand-link">
       <img src="logo.jpg" alt="Step Solar Energy logo" onerror="this.style.display='none'">
       <div class="brand-text">Step Solar Energy<span>Pvt Ltd</span></div>
     </a>
     <nav class="links">
-      <a href="#why" data-testid="nav-why">Why Solar</a>
-      <a href="#gallery" data-testid="nav-gallery">Gallery</a>
-      <a href="#process" data-testid="nav-process">Our Process</a>
-      <a href="#solutions" data-testid="nav-solutions">Solutions</a>
+      <a href="why-solar.html" data-testid="nav-why">Why Solar</a>
+      <a href="pm-surya-ghar.html" data-testid="nav-pm-yojana">PM Surya Ghar</a>
+      <a href="gallery.html" data-testid="nav-gallery">Gallery</a>
+      <a href="our-process.html" data-testid="nav-process">Our Process</a>
+      <a href="solutions.html" data-testid="nav-solutions">Solutions</a>
       <a href="#calculator" data-testid="nav-calc">Savings</a>
-      <a href="#quote" data-testid="nav-contact">Contact</a>
+      <a href="contact.html" data-testid="nav-contact">Contact</a>
     </nav>
-    <a href="#quote" class="btn btn-sun" data-testid="nav-cta">Get Free Quotation</a>
+    <a href="contact.html" class="btn btn-sun" data-testid="nav-cta">Get Free Quotation</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="why-solar.html">Why Solar</a>
+    <a href="pm-surya-ghar.html">PM Surya Ghar</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="our-process.html">Our Process</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="#calculator">Savings</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-sun" style="margin-top:8px;">Get Free Quotation</a>
   </div>
 </header>
 
 <section class="hero" id="top">
   <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">Uttar Pradesh &amp; Bihar · Rooftop, Residential, Commercial &amp; Agri</span>
-      <h1>Turn your roof into <em>your own power plant.</em></h1>
-      <p class="lead">Step Solar Energy designs, installs and services rooftop solar for homes, shops and farms across Uttar Pradesh &amp; Bihar — from your first enquiry to the day the meter starts running backwards.</p>
+    <div class="hero-content">
+      <div class="pm-scheme-badge">
+        <span class="pm-pulse"></span>
+        <span>PM Surya Ghar: Muft Bijli Yojana Authorized</span>
+      </div>
+      <h1>Turn your roof into <em>your own 3D solar power plant.</em></h1>
+      <p class="lead">Step Solar Energy designs, installs and commissions rooftop solar &amp; renewable energy plants across Uttar Pradesh &amp; Bihar. Claim up to <b>₹78,000 Direct Bank Transfer Subsidy</b> under PM Surya Ghar Yojana with zero electricity bills.</p>
+      
+      <div class="hero-chips">
+        <span class="chip">☀️ ₹78,000 Govt Subsidy</span>
+        <span class="chip">⚡ 300 Units Free Power/Mo</span>
+        <span class="chip">🔄 Net Metering (Zero Bill)</span>
+        <span class="chip">🌱 100% Clean Energy</span>
+      </div>
+
       <div class="hero-cta">
-        <a href="#quote" class="btn btn-sun" data-testid="hero-cta-quote">Get Free Quotation</a>
-        <a href="#process" class="btn btn-ghost" data-testid="hero-cta-process">See how it works</a>
+        <a href="contact.html" class="btn btn-sun" data-testid="hero-cta-quote">Get Free Quotation</a>
+        <a href="pm-surya-ghar.html" class="btn btn-pm" data-testid="hero-cta-pm">PM Surya Ghar Subsidy</a>
+        <a href="#calculator" class="btn btn-ghost" data-testid="hero-cta-calc">Calculate Savings</a>
       </div>
       <div class="trust-row">
         <span><b>GST</b> 09ABPCS3779K1ZC</span>
         <span><b>CIN</b> U42201UP2025PTC217484</span>
-        <span><b>Based in</b> Ghazipur, Uttar Pradesh</span>
+        <span><b>MNRE</b> Tier-1 DCR Panels</span>
+        <span><b>Based in</b> Ghazipur, UP</span>
       </div>
     </div>
 
-    <div class="hero-photo">
-      <img src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=800&auto=format&fit=crop" alt="Solar panels installed on a rooftop" fetchpriority="high" decoding="async">
-      <div class="cap">Rooftop installation</div>
-    </div>
+    <!-- 3D Interactive Solar Energy Simulation Stage -->
+    <div class="stage-3d-wrap">
+      <div class="stage-3d-card" id="solar3d-stage">
+        <canvas id="solar3d-canvas" aria-label="Interactive 3D Solar Power Plant Simulation"></canvas>
 
-    <div class="calc" id="calculator">
+        <!-- 3D HUD Top -->
+        <div class="stage-hud top">
+          <div class="hud-stat">
+            <span class="hud-live-dot"></span>
+            <div>
+              <div class="hud-label">LIVE 3D SOLAR SIMULATION</div>
+              <div class="hud-val"><span id="hudLiveKw">4.8</span> kW <span class="hud-sub">GENERATING</span></div>
+            </div>
+          </div>
+          <div class="hud-views">
+            <button type="button" class="view-btn active" data-view="roof" title="View PM Surya Ghar Rooftop">🏠 Rooftop</button>
+            <button type="button" class="view-btn" data-view="plant" title="View Solar Power Plant">⚡ Solar Plant</button>
+            <button type="button" class="view-btn" data-view="grid" title="View Renewable Eco-Grid">🌱 Eco-Grid</button>
+          </div>
+        </div>
+
+        <!-- 3D HUD Bottom Controls -->
+        <div class="stage-hud bottom">
+          <div class="sun-controller">
+            <div class="sun-meta">
+              <span>☀️ Sun Tracker &amp; Generation</span>
+              <b id="sunTimeLabel">12:00 PM (Peak Sun)</b>
+            </div>
+            <input type="range" id="sunSlider" min="0" max="100" value="50" aria-label="Sun position slider">
+          </div>
+          <div class="hud-hint">🖱️ Drag to rotate 3D • Scroll to zoom</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero-integrated Bijli Bill & PM Surya Ghar Subsidy Calculator -->
+  <div class="wrap" style="margin-top:44px;">
+    <div class="calc" id="calculator" data-tilt>
       <div class="calc-top">
-        <h3>Bijli Bill Calculator</h3>
-        <span class="mono">ESTIMATE</span>
+        <div>
+          <h3>Bijli Bill &amp; PM Surya Ghar Subsidy Calculator</h3>
+          <p style="font-size:0.84rem; color:var(--ink-soft); margin-top:3px;">Check your estimated solar system size, Central &amp; State government subsidies &amp; net cost</p>
+        </div>
+        <span class="mono pm-calc-pill">PM SURYA GHAR + STATE SUBSIDY</span>
       </div>
-      <label for="billRange">Your current monthly electricity bill</label>
-      <div class="bill-value mono">₹<span id="billOut">4000</span> / month</div>
-      <input type="range" id="billRange" min="500" max="20000" step="100" value="4000">
-      <div class="calc-results">
-        <div class="result-box"><div class="k">Suggested system</div><div class="v" id="sysSize">4.0 kW</div></div>
-        <div class="result-box"><div class="k">Est. payback</div><div class="v" id="payback">~4.2 yrs</div></div>
-        <div class="result-box wide"><div class="k">Estimated 25-year savings</div><div class="v" id="lifeSavings">₹ 9,00,000+</div></div>
-      </div>
-      <p class="calc-note">Illustrative estimate based on average UP sunlight hours and grid tariffs. Your exact system size, subsidy and quotation are confirmed after a free site survey.</p>
-    </div>
-  </div>
-</section>
+      
+      <div class="calc-main-grid">
+        <div class="calc-left">
+          <label for="billRange">Your current monthly electricity bill</label>
+          <div class="bill-value mono">₹<span id="billOut">4000</span> / month</div>
+          <input type="range" id="billRange" min="500" max="20000" step="100" value="4000">
 
-<div class="pillars">
-  <div class="wrap" style="padding:40px 0;">
-    <div class="pillars-grid">
-      <div class="pillar"><div class="word">Freedom</div><p>Stop depending on grid supply and rising tariffs. Generate your own electricity, right from your rooftop.</p></div>
-      <div class="pillar"><div class="word">Future</div><p>25-year panel life, clean energy for your family and farm, and a system that keeps paying you back for decades.</p></div>
-      <div class="pillar"><div class="word">Savings</div><p>Government subsidy support plus a monthly bill that drops close to zero — most customers recover their cost in under 5 years.</p></div>
-    </div>
-  </div>
-</div>
+          <label style="margin-top:16px; font-weight:600;">Select Your State (State Govt Top-Up)</label>
+          <div class="calc-state-toggle" id="stateToggle">
+            <button type="button" class="state-btn active" data-state="UP">Uttar Pradesh (UPNEDA)</button>
+            <button type="button" class="state-btn" data-state="Bihar">Bihar (BREDA)</button>
+          </div>
+          
+          <div class="calc-subsidy-highlight">
+            <div class="subsidy-badge-tag">TOTAL GOVT SUBSIDY (CENTRAL + STATE)</div>
+            <div class="subsidy-sum">
+              <span class="sub-amount" id="subAmount">₹ 1,08,000</span>
+              <div class="sub-split">
+                <span class="split-tag">Central PM Surya: <b id="splitCentral">₹78,000</b></span>
+                <span class="split-plus">+</span>
+                <span class="split-tag" id="splitStateTag">UP State: <b id="splitState">₹30,000</b></span>
+              </div>
+              <span class="sub-note" id="subNote">Directly credited to your bank account via Central DBT + State Government Nodal Agency subsidy.</span>
+            </div>
+          </div>
+        </div>
 
-<section id="why">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Why Step Solar</span>
-      <h2>One local team, from survey to switch-on.</h2>
-      <p>We're not a marketplace connecting you to unknown installers — our own engineers survey, design, install and service every system we sell in Uttar Pradesh.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-card"><div class="dot"></div><h3>Registered &amp; compliant</h3><p>A GST-registered, MCA-incorporated company (CIN U42201UP2025PTC217484) — not an unregistered local vendor.</p></div>
-      <div class="why-card"><div class="dot"></div><h3>Subsidy handled for you</h3><p>We manage your PM Surya Ghar / net-metering paperwork with the discom, so you don't have to run between offices.</p></div>
-      <div class="why-card"><div class="dot"></div><h3>Built for all conditions &amp; weather</h3><p>Built to deliver maximum performance across all climates — featuring robust protection against intense heat, dust, voltage drops, and severe weather conditions.</p></div>
-      <div class="why-card"><div class="dot"></div><h3>Zero Maintenance Cost</h3><p>We keep your system running at peak efficiency with free site visits every 3 months and full maintenance support free for one year.</p></div>
-      <div class="why-card"><div class="dot"></div><h3>Transparent quotation</h3><p>Every quotation is itemised — panels, inverter, structure, wiring and labour — with no hidden charges added later.</p></div>
-      <div class="why-card"><div class="dot"></div><h3>Farm &amp; business ready</h3><p>Beyond rooftops, we install solar water pumps and commercial systems sized for shops, mandis and small industry.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="gallery" id="gallery">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Gallery</span>
-      <h2>What a Step Solar installation looks like.</h2>
-      <p>Tap any photo for a closer look.</p>
-    </div>
-    <div class="gal-grid">
-      <div class="gal-item" onclick="openLightbox(0)"><img src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=1200&auto=format&fit=crop" alt="Solar panels installed on a rooftop" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Rooftop Installation</div><div class="s">Residential system, panels mounted</div></div></div>
-      <div class="gal-item small" onclick="openLightbox(1)"><img src="https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Close-up of solar panel cells" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Photovoltaic Cells</div><div class="s">High-efficiency panel, close-up</div></div></div>
-      <div class="gal-item small" onclick="openLightbox(2)"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Solar panel array under blue sky" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Ground-Mount Array</div><div class="s">Ideal for farms &amp; open land</div></div></div>
-      <div class="gal-item small" onclick="openLightbox(1)"><img src="https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Solar panel texture pattern" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Built to Last</div><div class="s">25-year performance warranty</div></div></div>
-      <div class="gal-item small" onclick="openLightbox(2)"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=60&w=1000&auto=format&fit=crop" alt="Solar farm field" loading="lazy" decoding="async"><div class="gal-zoom">⤢</div><div class="gal-caption"><div class="t">Clean Energy</div><div class="s">Powering homes across UP</div></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <img id="lightboxImg" src="" alt="">
-  <div class="lightbox-cap" id="lightboxCap"></div>
-</div>
-
-<section class="process" id="process">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Our Process</span>
-      <h2>Seven steps, one dedicated team member at each.</h2>
-      <p>Every lead moves through defined stages, handled by the right specialist — tracked end-to-end so nothing is missed.</p>
-    </div>
-    <div class="timeline">
-      <div class="step"><div class="num">01</div><div class="step-body"><span class="who">Sales Team</span><h3>Enquiry &amp; Requirement Call</h3><p>You share your electricity bill and roof/land details — over the website, phone or in person — and our sales team notes down your requirement.</p></div></div>
-      <div class="step"><div class="num">02</div><div class="step-body"><span class="who">Site Survey Team</span><h3>Free Site Survey</h3><p>Our surveyor visits your site to check roof/land space, shadow-free area, structure strength and electrical connection.</p></div></div>
-      <div class="step"><div class="num">03</div><div class="step-body"><span class="who">Sales Team</span><h3>Design &amp; Quotation</h3><p>We prepare a system design and a detailed, itemised quotation — sent to you as a PDF for your approval.</p></div></div>
-      <div class="step"><div class="num">04</div><div class="step-body"><span class="who">Accounts Team</span><h3>Booking &amp; Subsidy Filing</h3><p>On confirmation, we collect the booking amount, raise your order and file your subsidy / net-metering application.</p></div></div>
-      <div class="step"><div class="num">05</div><div class="step-body"><span class="who">Installation Team</span><h3>Material Dispatch &amp; Installation</h3><p>Panels, inverter and structure are dispatched and installed by our trained technicians on a scheduled date.</p></div></div>
-      <div class="step"><div class="num">06</div><div class="step-body"><span class="who">Installation Team</span><h3>Testing &amp; Commissioning</h3><p>The system is tested end-to-end, net meter is coordinated with the discom, and your solar plant is switched on.</p></div></div>
-      <div class="step"><div class="num">07</div><div class="step-body"><span class="who">Accounts Team</span><h3>Final Invoice &amp; Handover</h3><p>Final invoice and warranty documents are issued, and your system is handed over with after-sales support in place.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="solutions">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Solutions</span>
-      <h2>Solar for every roof, shop and field.</h2>
-    </div>
-    <div class="sol-grid">
-      <div class="sol-card res" style="background-image:url('https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=60&w=900&auto=format&fit=crop');"><span class="tag">Residential</span><h3>Home Rooftop Solar</h3><p>1 kW – 10 kW systems for houses, sized to your monthly bill and roof space.</p></div>
-      <div class="sol-card com" style="background-image:url('https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=60&w=900&auto=format&fit=crop');"><span class="tag">Commercial</span><h3>Shops &amp; Small Industry</h3><p>Systems for mandis, shops, offices and small factories to cut daytime running costs.</p></div>
-      <div class="sol-card agr" style="background-image:url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=60&w=900&auto=format&fit=crop');"><span class="tag">Agricultural</span><h3>Solar Water Pumps</h3><p>Diesel-free irrigation with solar-powered pump sets, built for farm use across the region.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="stats">
-    <span class="eyebrow" style="color:#D7E8FF;">By The Numbers</span>
-    <h2>Why customers switch to Step Solar</h2>
-    <p>Illustrative figures based on typical rooftop installations — your exact numbers are confirmed at the survey stage.</p>
-    <div class="stats-grid">
-      <div class="stat"><div class="v">25 yrs</div><div class="k">Panel performance warranty</div></div>
-      <div class="stat"><div class="v">~90%</div><div class="k">Typical bill reduction</div></div>
-      <div class="stat"><div class="v">4–5 yrs</div><div class="k">Average payback period</div></div>
-      <div class="stat"><div class="v">7 steps</div><div class="k">Tracked from enquiry to handover</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="quote">
-  <div class="wrap">
-    <div class="quote">
-      <div class="quote-info">
-        <span class="eyebrow">Get Started</span>
-        <h2>Get Free Solar Quotation &amp; Save up to 90% on Electricity Bills!</h2>
-        <p><b>Step Solar Energy Pvt Ltd</b><br>Share your details below — our sales team will call you to schedule a free site survey.</p>
-        <ul>
-          <li>No cost, no obligation site visit</li>
-          <li>Itemised quotation as a PDF</li>
-          <li>Subsidy &amp; paperwork support included</li>
-        </ul>
-        <p class="form-note" style="margin-top:18px;"><span style="color:var(--sun); font-weight:700;">*</span> Indicates required question</p>
+        <div class="calc-results-enhanced">
+          <div class="result-box">
+            <div class="k">Suggested System</div>
+            <div class="v" id="sysSize">4.0 kW</div>
+            <div class="sub-k" id="sysRoof">Roof: ~320 sq. ft.</div>
+          </div>
+          <div class="result-box">
+            <div class="k">Est. System Cost</div>
+            <div class="v" id="sysCost">₹ 2,20,000</div>
+            <div class="sub-k">Before Subsidy</div>
+          </div>
+          <div class="result-box highlight-green">
+            <div class="k">Central PM Surya Subsidy</div>
+            <div class="v" id="calcSubsidy">₹ 78,000</div>
+            <div class="sub-k">Central Govt DBT</div>
+          </div>
+          <div class="result-box highlight-emerald">
+            <div class="k" id="stateSubLabel">UP State Subsidy (UPNEDA)</div>
+            <div class="v" id="stateSubAmount">₹ 30,000</div>
+            <div class="sub-k" id="stateSubNote">State Top-Up DBT</div>
+          </div>
+          <div class="result-box highlight-blue">
+            <div class="k">Net Effective Cost</div>
+            <div class="v" id="netCost">₹ 1,12,000</div>
+            <div class="sub-k">Your Net Investment</div>
+          </div>
+          <div class="result-box">
+            <div class="k">Monthly Bill Saving</div>
+            <div class="v" id="monthSaving">₹ 3,600/mo</div>
+            <div class="sub-k">~90% Reduction</div>
+          </div>
+          <div class="result-box">
+            <div class="k">Est. Payback</div>
+            <div class="v" id="payback">~2.6 yrs</div>
+            <div class="sub-k">25-Yr Panel Warranty</div>
+          </div>
+          <div class="result-box wide">
+            <div class="k">Estimated 25-Year Net Savings</div>
+            <div class="v" id="lifeSavings">₹ 9,68,000+</div>
+            <div class="sub-k">Includes net metering benefits &amp; state subsidies</div>
+          </div>
+        </div>
       </div>
 
-      <form class="qform" id="quoteForm" onsubmit="handleQuote(event)" data-testid="quote-form">
-
-        <label class="field-label">Full Name<span class="req">*</span></label>
-        <input type="text" name="full_name" placeholder="Your full name" required data-testid="input-full-name">
-
-        <div class="field-row">
-          <div>
-            <label class="field-label">Contact Number<span class="req">*</span></label>
-            <input type="tel" name="phone" placeholder="10-digit mobile number" required pattern="[6-9][0-9]{9}" data-testid="input-phone">
-          </div>
-          <div>
-            <label class="field-label">Email Address<span class="req">*</span></label>
-            <input type="email" name="email" placeholder="you@example.com" required data-testid="input-email">
-          </div>
-        </div>
-
-        <div class="field-row">
-          <div>
-            <label class="field-label">State<span class="req">*</span></label>
-            <input type="text" name="state" placeholder="e.g. Uttar Pradesh / Bihar" required data-testid="input-state">
-          </div>
-          <div>
-            <label class="field-label">City<span class="req">*</span></label>
-            <input type="text" name="city" placeholder="Your city / town" required data-testid="input-city">
-          </div>
-        </div>
-
-        <label class="field-label">Pincode<span class="req">*</span></label>
-        <input type="text" name="pincode" placeholder="6-digit pincode" required pattern="[0-9]{6}" inputmode="numeric" data-testid="input-pincode">
-
-        <label class="field-label">Property Type<span class="req">*</span></label>
-        <div class="choice-group">
-          <label class="choice"><input type="radio" name="propertyType" value="Residential" required data-testid="prop-residential"><span>Residential</span></label>
-          <label class="choice"><input type="radio" name="propertyType" value="Commercial / Office" data-testid="prop-commercial"><span>Commercial / Office</span></label>
-          <label class="choice"><input type="radio" name="propertyType" value="Industrial / Factory" data-testid="prop-industrial"><span>Industrial / Factory</span></label>
-          <label class="choice"><input type="radio" name="propertyType" value="Agricultural / Pump" data-testid="prop-agri"><span>Agricultural / Pump</span></label>
-        </div>
-
-        <label class="field-label">Monthly Electricity Bill (₹)<span class="req">*</span></label>
-        <input type="number" name="monthly_bill" placeholder="e.g. 4000" required min="0" data-testid="input-bill">
-
-        <label class="field-label">Roof Type &amp; Space<span class="req">*</span></label>
-        <div class="choice-group">
-          <label class="choice"><input type="radio" name="roofType" value="Rented Roof / No Roof" required data-testid="roof-rented"><span>Rented Roof / No Roof</span></label>
-          <label class="choice"><input type="radio" name="roofType" value="Small Space (100-200 sq. ft.)" data-testid="roof-small"><span>Small Space (100–200 sq. ft.)</span></label>
-          <label class="choice"><input type="radio" name="roofType" value="Medium Space (300-500 sq. ft.)" data-testid="roof-medium"><span>Medium Space (300–500 sq. ft.)</span></label>
-          <label class="choice"><input type="radio" name="roofType" value="Large Open Roof (500+ sq. ft.)" data-testid="roof-large"><span>Large Open Roof (500+ sq. ft.)</span></label>
-        </div>
-
-        <label class="field-label">Aap Solar kab tak lagwana chahte hain?<span class="req">*</span></label>
-        <div class="choice-group">
-          <label class="choice"><input type="radio" name="timeline" value="Immediately" required data-testid="time-now"><span>Immediately</span></label>
-          <label class="choice"><input type="radio" name="timeline" value="Within 1-2 months" data-testid="time-1-2m"><span>Within 1–2 months</span></label>
-          <label class="choice"><input type="radio" name="timeline" value="Sirf jankari aur quotation chahiye" data-testid="time-info"><span>Sirf jankari aur quotation chahiye</span></label>
-        </div>
-
-        <div id="formAlert" class="form-alert" role="status" data-testid="form-alert"></div>
-
-        <button type="submit" class="btn btn-sun" id="submitBtn" data-testid="submit-quote">Request Free Quotation</button>
-        <p class="form-note">By submitting, you agree to be contacted by Step Solar Energy Pvt Ltd regarding your enquiry.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Solar panel installation questions, answered.</h2>
-    </div>
-    <div class="faq-list">
-      <details>
-        <summary>What is the price of a rooftop solar system?</summary>
-        <p>A rooftop solar system typically costs about ₹55,000 per kW installed. A 3 kW system therefore works out to roughly ₹1.65 lakh before subsidy. Your exact quote is confirmed after a free site survey, and we itemise every cost — panels, inverter, structure, wiring and labour — with no hidden charges.</p>
-      </details>
-      <details>
-        <summary>How much can I save on my electricity bill with solar panels?</summary>
-        <p>Most Step Solar customers reduce their monthly electricity bill by up to 90%. With net metering, surplus energy your rooftop generates is exported back to the grid and adjusted against the power you draw at night.</p>
-      </details>
-      <details>
-        <summary>How long does a solar system take to pay for itself?</summary>
-        <p>Typical payback is 4–5 years for most homes, while solar panels carry a 25-year performance warranty — so you keep saving for two decades after the system has paid for itself.</p>
-      </details>
-      <details>
-        <summary>Do I have to handle the subsidy and net-metering paperwork myself?</summary>
-        <p>No. Step Solar manages your PM Surya Ghar subsidy and discom net-metering paperwork for you, so you don't have to run between government offices.</p>
-      </details>
-      <details>
-        <summary>Which areas does Step Solar serve?</summary>
-        <p>We install and service rooftop solar across Uttar Pradesh and Bihar, and are based in Bhadaura, Ghazipur (UP).</p>
-      </details>
-      <details>
-        <summary>Is a site visit required before I get a quotation?</summary>
-        <p>Yes — a free, no-obligation site survey is the first step. Our surveyor checks your roof or land space, shadow-free area, structure strength and electrical connection, and only then we size your system and share an itemised quotation.</p>
-      </details>
+      <div class="calc-footer-row">
+        <p class="calc-note">
+          *Estimates based on UP/Bihar solar irradiance, PM Surya Ghar Muft Bijli Yojana (Central DBT up to ₹78,000) and State Government Top-up Subsidies (UPNEDA / BREDA up to ₹30,000). Exact subsidy and system sizing are confirmed after a free site survey.
+        </p>
+        <a href="contact.html" class="btn btn-sun" style="white-space:nowrap;">Claim ₹1,08,000 Subsidy →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -884,10 +1096,11 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="#why">Why Solar</a></li>
-          <li><a href="#process">Our Process</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="why-solar.html">Why Solar</a></li>
+          <li><a href="pm-surya-ghar.html">PM Surya Ghar</a></li>
+          <li><a href="our-process.html">Our Process</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
         </ul>
         <h4 style="margin-top:22px;">Solar Services by Location</h4>
@@ -900,7 +1113,7 @@
       <div>
         <h4>Get In Touch</h4>
         <ul>
-          <li><a href="#quote">Request a Quotation</a></li>
+          <li><a href="contact.html">Request a Quotation</a></li>
           <li><a href="tel:+919519956600">+91 95199 56600</a></li>
           <li><a href="mailto:sales@stepsolar.in">sales@stepsolar.in</a></li>
           <li><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">View office on Google Maps</a></li>
@@ -917,138 +1130,854 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  /* ----------------- Bijli Bill Calculator ------------------ */
+  /* ----------------- Bijli Bill & PM Surya Ghar Subsidy Calculator ------------------ */
   const billRange = document.getElementById('billRange');
   const billOut = document.getElementById('billOut');
   const sysSize = document.getElementById('sysSize');
+  const sysRoof = document.getElementById('sysRoof');
+  const sysCost = document.getElementById('sysCost');
+  const calcSubsidy = document.getElementById('calcSubsidy');
+  const stateSubLabel = document.getElementById('stateSubLabel');
+  const stateSubAmount = document.getElementById('stateSubAmount');
+  const stateSubNote = document.getElementById('stateSubNote');
+  const subAmount = document.getElementById('subAmount');
+  const splitCentral = document.getElementById('splitCentral');
+  const splitState = document.getElementById('splitState');
+  const splitStateTag = document.getElementById('splitStateTag');
+  const subNote = document.getElementById('subNote');
+  const netCost = document.getElementById('netCost');
+  const monthSaving = document.getElementById('monthSaving');
   const payback = document.getElementById('payback');
   const lifeSavings = document.getElementById('lifeSavings');
 
+  let selectedState = 'UP'; // 'UP' or 'Bihar'
+
+  const stateButtons = document.querySelectorAll('#stateToggle .state-btn');
+  stateButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      stateButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedState = btn.getAttribute('data-state') || 'UP';
+      updateCalc();
+    });
+  });
+
   function fmtINR(n){ return Math.round(n).toLocaleString('en-IN'); }
+  
   function updateCalc(){
     const bill = parseInt(billRange.value, 10);
     billOut.textContent = fmtINR(bill);
     const unitRate = 8;
     const unitsPerMonth = bill / unitRate;
     const kwFromUnits = unitsPerMonth / 120;
-    const size = Math.max(1, Math.round(kwFromUnits * 2) / 2);
+    const size = Math.max(1, Math.min(10, Math.round(kwFromUnits * 2) / 2));
     const costPerKw = 55000;
-    const systemCost = size * costPerKw;
-    const monthlySaving = bill * 0.9;
-    const annualSaving = monthlySaving * 12;
-    const paybackYears = systemCost / annualSaving;
-    const lifetime = annualSaving * 25 - systemCost;
-    sysSize.textContent = size.toFixed(1) + ' kW';
-    payback.textContent = '~' + paybackYears.toFixed(1) + ' yrs';
-    lifeSavings.textContent = '₹ ' + fmtINR(Math.max(lifetime, annualSaving * 10)) + '+';
+    const totalCost = size * costPerKw;
+    
+    // 1. Central PM Surya Ghar Muft Bijli Yojana Subsidy
+    let centralSubsidy = 30000;
+    if(size >= 3){
+      centralSubsidy = 78000; // Max central DBT subsidy
+    } else if(size >= 2){
+      centralSubsidy = 60000;
+    } else {
+      centralSubsidy = 30000;
+    }
+
+    // 2. State Government Top-Up Subsidy (UPNEDA for UP, BREDA for Bihar)
+    let stateSubsidy = 15000;
+    if(size >= 2){
+      stateSubsidy = 30000; // Max state top-up for 2 kW and above
+    } else {
+      stateSubsidy = 15000;
+    }
+
+    const totalSubsidy = centralSubsidy + stateSubsidy;
+    const customerNet = Math.max(0, totalCost - totalSubsidy);
+    const monthlySave = bill * 0.9;
+    const annualSave = monthlySave * 12;
+    const paybackYears = customerNet / annualSave;
+    const lifetime = (annualSave * 25) - customerNet;
+
+    const roofSqFt = Math.round(size * 80);
+
+    if(sysSize) sysSize.textContent = size.toFixed(1) + ' kW';
+    if(sysRoof) sysRoof.textContent = 'Roof: ~' + roofSqFt + ' sq. ft.';
+    if(sysCost) sysCost.textContent = '₹ ' + fmtINR(totalCost);
+    if(calcSubsidy) calcSubsidy.textContent = '₹ ' + fmtINR(centralSubsidy);
+    
+    if(selectedState === 'UP'){
+      if(stateSubLabel) stateSubLabel.textContent = 'UP State Subsidy (UPNEDA)';
+      if(stateSubAmount) stateSubAmount.textContent = '₹ ' + fmtINR(stateSubsidy);
+      if(stateSubNote) stateSubNote.textContent = 'UP Solar Policy Top-Up';
+      if(splitStateTag) splitStateTag.innerHTML = 'UP State: <b id="splitState">₹ ' + fmtINR(stateSubsidy) + '</b>';
+      if(subNote) subNote.textContent = 'Directly credited via Central DBT (₹' + fmtINR(centralSubsidy) + ') + Uttar Pradesh (UPNEDA: ₹' + fmtINR(stateSubsidy) + ') State Top-Up subsidy.';
+    } else {
+      if(stateSubLabel) stateSubLabel.textContent = 'Bihar State Subsidy (BREDA)';
+      if(stateSubAmount) stateSubAmount.textContent = '₹ ' + fmtINR(stateSubsidy);
+      if(stateSubNote) stateSubNote.textContent = 'BREDA Solar Top-Up';
+      if(splitStateTag) splitStateTag.innerHTML = 'Bihar State: <b id="splitState">₹ ' + fmtINR(stateSubsidy) + '</b>';
+      if(subNote) subNote.textContent = 'Directly credited via Central DBT (₹' + fmtINR(centralSubsidy) + ') + Bihar (BREDA: ₹' + fmtINR(stateSubsidy) + ') State Top-Up subsidy.';
+    }
+
+    if(subAmount) subAmount.textContent = '₹ ' + fmtINR(totalSubsidy);
+    if(splitCentral) splitCentral.textContent = '₹ ' + fmtINR(centralSubsidy);
+    if(netCost) netCost.textContent = '₹ ' + fmtINR(customerNet);
+    if(monthSaving) monthSaving.textContent = '₹ ' + fmtINR(monthlySave) + '/mo';
+    if(payback) payback.textContent = '~' + Math.max(1.2, paybackYears).toFixed(1) + ' yrs';
+    if(lifeSavings) lifeSavings.textContent = '₹ ' + fmtINR(Math.max(lifetime, annualSave * 12)) + '+';
   }
-  billRange.addEventListener('input', updateCalc);
-  updateCalc();
 
-  /* ----------------- Gallery lightbox ----------------------- */
-  const galImages = [
-    { src:"https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1600&auto=format&fit=crop", cap:"Rooftop Installation — residential system" },
-    { src:"https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=80&w=1600&auto=format&fit=crop", cap:"Photovoltaic Cells — close-up view" },
-    { src:"https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=80&w=1600&auto=format&fit=crop", cap:"Ground-Mount Array — for farms & open land" }
-  ];
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const lightboxCap = document.getElementById('lightboxCap');
-  function openLightbox(i){
-    const item = galImages[i];
-    lightboxImg.src = item.src;
-    lightboxCap.textContent = item.cap;
-    lightbox.classList.add('open');
-  }
-  function closeLightbox(){ lightbox.classList.remove('open'); }
-  lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLightbox(); });
-
-  /* ----------------- Quotation form → backend --------------- */
-  const API_BASE = window.location.origin;
-  const LEADS_URL = API_BASE + '/api/leads';
-
-  function showAlert(type, html){
-    const el = document.getElementById('formAlert');
-    el.className = 'form-alert show ' + type;
-    el.innerHTML = html;
-    el.scrollIntoView({behavior:'smooth', block:'center'});
-  }
-  function hideAlert(){
-    document.getElementById('formAlert').className = 'form-alert';
+  if(billRange){
+    billRange.addEventListener('input', updateCalc);
+    updateCalc();
   }
 
-  async function handleQuote(e){
-    e.preventDefault();
-    const form = e.target;
-    const btn = document.getElementById('submitBtn');
-    hideAlert();
+  /* ----------------- 3D Interactive Solar Power Plant Engine (Three.js) ------------------ */
+  (function initSolar3D(){
+    const canvas = document.getElementById('solar3d-canvas');
+    if(!canvas || typeof THREE === 'undefined') return;
 
-    const fd = new FormData(form);
-    const payload = {
-      full_name: (fd.get('full_name') || '').toString().trim(),
-      phone: (fd.get('phone') || '').toString().trim(),
-      email: (fd.get('email') || '').toString().trim(),
-      state: (fd.get('state') || '').toString().trim(),
-      city: (fd.get('city') || '').toString().trim(),
-      pincode: (fd.get('pincode') || '').toString().trim(),
-      property_type: (fd.get('propertyType') || '').toString(),
-      monthly_bill: parseInt(fd.get('monthly_bill') || '0', 10),
-      roof_type: (fd.get('roofType') || '').toString(),
-      timeline: (fd.get('timeline') || '').toString(),
-      source: 'website'
+    const container = document.getElementById('solar3d-stage');
+    let width = container.clientWidth || 500;
+    let height = container.clientHeight || 460;
+
+    // Scene & Camera
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xEDF5F8);
+    scene.fog = new THREE.FogExp2(0xEDF5F8, 0.015);
+
+    const camera = new THREE.PerspectiveCamera(42, width / height, 0.1, 100);
+    camera.position.set(13, 9, 14);
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      antialias: true,
+      powerPreference: 'high-performance'
+    });
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.1;
+
+    // Lighting
+    const hemiLight = new THREE.HemisphereLight(0xffffff, 0x3e5246, 0.65);
+    scene.add(hemiLight);
+
+    const sunLight = new THREE.DirectionalLight(0xfff7e6, 1.4);
+    sunLight.position.set(12, 16, 10);
+    sunLight.castShadow = true;
+    sunLight.shadow.mapSize.width = 1024;
+    sunLight.shadow.mapSize.height = 1024;
+    sunLight.shadow.camera.near = 0.5;
+    sunLight.shadow.camera.far = 40;
+    sunLight.shadow.camera.left = -12;
+    sunLight.shadow.camera.right = 12;
+    sunLight.shadow.camera.top = 12;
+    sunLight.shadow.camera.bottom = -12;
+    sunLight.shadow.bias = -0.0005;
+    scene.add(sunLight);
+
+    // Procedural Monocrystalline Solar Cell Texture
+    function createSolarPanelTexture(){
+      const c = document.createElement('canvas');
+      c.width = 256;
+      c.height = 256;
+      const ctx = c.getContext('2d');
+      // Deep monocrystalline silicon blue
+      ctx.fillStyle = '#0F2648';
+      ctx.fillRect(0, 0, 256, 256);
+      
+      // Solar cell grid lines
+      ctx.strokeStyle = '#254E7F';
+      ctx.lineWidth = 1.5;
+      const cols = 4, rows = 6;
+      const cellW = 256 / cols;
+      const cellH = 256 / rows;
+      for(let i = 0; i <= cols; i++){
+        ctx.beginPath();
+        ctx.moveTo(i * cellW, 0);
+        ctx.lineTo(i * cellW, 256);
+        ctx.stroke();
+      }
+      for(let j = 0; j <= rows; j++){
+        ctx.beginPath();
+        ctx.moveTo(0, j * cellH);
+        ctx.lineTo(256, j * cellH);
+        ctx.stroke();
+      }
+      
+      // Silver busbars
+      ctx.strokeStyle = '#D6E4FF';
+      ctx.lineWidth = 2;
+      for(let i = 0; i < cols; i++){
+        const cx = i * cellW + cellW / 2;
+        ctx.beginPath();
+        ctx.moveTo(cx - 6, 0);
+        ctx.lineTo(cx - 6, 256);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(cx + 6, 0);
+        ctx.lineTo(cx + 6, 256);
+        ctx.stroke();
+      }
+
+      const tex = new THREE.CanvasTexture(c);
+      tex.wrapS = THREE.RepeatWrapping;
+      tex.wrapT = THREE.RepeatWrapping;
+      return tex;
+    }
+
+    const solarTexture = createSolarPanelTexture();
+    const panelMaterial = new THREE.MeshStandardMaterial({
+      map: solarTexture,
+      roughness: 0.15,
+      metalness: 0.8,
+      color: 0x1B4B82
+    });
+    const frameMaterial = new THREE.MeshStandardMaterial({
+      color: 0xD0D7DE,
+      metalness: 0.85,
+      roughness: 0.25
+    });
+
+    // Helper: Single Solar Panel with aluminum frame
+    function createSolarPanel(w, h){
+      const group = new THREE.Group();
+      // Panel face
+      const faceGeom = new THREE.BoxGeometry(w, 0.04, h);
+      const face = new THREE.Mesh(faceGeom, panelMaterial);
+      face.castShadow = true;
+      face.receiveShadow = true;
+      group.add(face);
+      // Outer silver frame
+      const frameGeom = new THREE.BoxGeometry(w + 0.04, 0.05, h + 0.04);
+      const frame = new THREE.Mesh(frameGeom, frameMaterial);
+      frame.position.y = -0.01;
+      group.add(frame);
+      return group;
+    }
+
+    // --- 1. Eco Ground Island ---
+    const islandGroup = new THREE.Group();
+    const baseGeom = new THREE.CylinderGeometry(11, 11.5, 0.8, 36);
+    const baseMat = new THREE.MeshStandardMaterial({ color: 0x356843, roughness: 0.8 });
+    const baseMesh = new THREE.Mesh(baseGeom, baseMat);
+    baseMesh.position.y = -0.4;
+    baseMesh.receiveShadow = true;
+    islandGroup.add(baseMesh);
+
+    // Green grass lawn top
+    const lawnGeom = new THREE.CylinderGeometry(10.8, 10.8, 0.1, 36);
+    const lawnMat = new THREE.MeshStandardMaterial({ color: 0x4CAE50, roughness: 0.7 });
+    const lawnMesh = new THREE.Mesh(lawnGeom, lawnMat);
+    lawnMesh.position.y = 0.05;
+    lawnMesh.receiveShadow = true;
+    islandGroup.add(lawnMesh);
+
+    // Stone pathway to house & solar array
+    const pathGeom = new THREE.BoxGeometry(2.4, 0.02, 6);
+    const pathMat = new THREE.MeshStandardMaterial({ color: 0x90A4AE, roughness: 0.9 });
+    const pathMesh = new THREE.Mesh(pathGeom, pathMat);
+    pathMesh.position.set(-2, 0.11, 3.5);
+    pathMesh.rotation.y = 0.1;
+    pathMesh.receiveShadow = true;
+    islandGroup.add(pathMesh);
+
+    scene.add(islandGroup);
+
+    // --- 2. PM Surya Ghar Residential House ---
+    const houseGroup = new THREE.Group();
+    houseGroup.position.set(-3, 0, 0.5);
+
+    // House walls
+    const wallGeom = new THREE.BoxGeometry(4.2, 2.4, 4.4);
+    const wallMat = new THREE.MeshStandardMaterial({ color: 0xFAFAF8, roughness: 0.7 });
+    const walls = new THREE.Mesh(wallGeom, wallMat);
+    walls.position.y = 1.2;
+    walls.castShadow = true;
+    walls.receiveShadow = true;
+    houseGroup.add(walls);
+
+    // Front door
+    const doorGeom = new THREE.BoxGeometry(0.8, 1.5, 0.06);
+    const doorMat = new THREE.MeshStandardMaterial({ color: 0x795548, roughness: 0.5 });
+    const door = new THREE.Mesh(doorGeom, doorMat);
+    door.position.set(0, 0.75, 2.23);
+    houseGroup.add(door);
+
+    // Windows with warm glass
+    const winGeom = new THREE.BoxGeometry(1.0, 0.9, 0.05);
+    const winMat = new THREE.MeshStandardMaterial({
+      color: 0x81D4FA,
+      roughness: 0.1,
+      metalness: 0.9,
+      emissive: 0x002233
+    });
+    const win1 = new THREE.Mesh(winGeom, winMat);
+    win1.position.set(-1.2, 1.4, 2.23);
+    houseGroup.add(win1);
+
+    const win2 = new THREE.Mesh(winGeom, winMat);
+    win2.position.set(1.2, 1.4, 2.23);
+    houseGroup.add(win2);
+
+    // Side windows
+    const sideWin1 = win1.clone();
+    sideWin1.rotation.y = Math.PI / 2;
+    sideWin1.position.set(-2.13, 1.4, 0);
+    houseGroup.add(sideWin1);
+
+    // Gable Roof
+    // South-facing roof pitch (~26 degrees slope towards +Z)
+    const roofSouthGeom = new THREE.BoxGeometry(4.6, 0.12, 2.6);
+    const roofMat = new THREE.MeshStandardMaterial({ color: 0x37474F, roughness: 0.6 });
+    const roofSouth = new THREE.Mesh(roofSouthGeom, roofMat);
+    roofSouth.position.set(0, 2.9, 1.05);
+    roofSouth.rotation.x = 0.44; // ~25 deg tilt
+    roofSouth.castShadow = true;
+    roofSouth.receiveShadow = true;
+    houseGroup.add(roofSouth);
+
+    // North-facing roof pitch
+    const roofNorth = roofSouth.clone();
+    roofNorth.position.set(0, 2.9, -1.05);
+    roofNorth.rotation.x = -0.44;
+    houseGroup.add(roofNorth);
+
+    // Rooftop Solar Array (PM Surya Ghar 3 kW/4 kW: 8 panels in 2 rows of 4)
+    const roofPanels = new THREE.Group();
+    roofPanels.position.copy(roofSouth.position);
+    roofPanels.rotation.copy(roofSouth.rotation);
+
+    for(let r = 0; r < 2; r++){
+      for(let c = 0; c < 4; c++){
+        const p = createSolarPanel(0.92, 1.05);
+        p.position.set(-1.5 + c * 1.0, 0.1, -0.6 + r * 1.15);
+        roofPanels.add(p);
+      }
+    }
+    houseGroup.add(roofPanels);
+
+    // Wall-mounted Inverter unit with blinking LED
+    const invGeom = new THREE.BoxGeometry(0.5, 0.7, 0.2);
+    const invMat = new THREE.MeshStandardMaterial({ color: 0xE0E0E0, metalness: 0.3, roughness: 0.4 });
+    const inverter = new THREE.Mesh(invGeom, invMat);
+    inverter.position.set(2.15, 1.2, 0.8);
+    houseGroup.add(inverter);
+
+    // LED Status Light
+    const ledGeom = new THREE.SphereGeometry(0.04, 12, 12);
+    const ledMat = new THREE.MeshBasicMaterial({ color: 0x00E676 });
+    const ledMesh = new THREE.Mesh(ledGeom, ledMat);
+    ledMesh.position.set(2.26, 1.45, 0.8);
+    houseGroup.add(ledMesh);
+
+    // Smart Net Meter Box
+    const meterGeom = new THREE.BoxGeometry(0.35, 0.45, 0.15);
+    const meterMat = new THREE.MeshStandardMaterial({ color: 0x455A64, roughness: 0.5 });
+    const meterBox = new THREE.Mesh(meterGeom, meterMat);
+    meterBox.position.set(2.15, 0.7, 1.4);
+    houseGroup.add(meterBox);
+
+    scene.add(houseGroup);
+
+    // --- 3. Ground-Mounted Solar Power Plant Array ---
+    const plantGroup = new THREE.Group();
+    plantGroup.position.set(4.2, 0, -1.0);
+
+    // Support frames for ground solar arrays
+    const rackMat = new THREE.MeshStandardMaterial({ color: 0x78909C, metalness: 0.8, roughness: 0.3 });
+
+    function createGroundSolarRow(zOffset){
+      const rowGroup = new THREE.Group();
+      rowGroup.position.z = zOffset;
+
+      // Galvanized steel posts
+      for(let x = -2.2; x <= 2.2; x += 1.45){
+        const legGeom = new THREE.CylinderGeometry(0.035, 0.035, 0.9, 12);
+        const legFront = new THREE.Mesh(legGeom, rackMat);
+        legFront.position.set(x, 0.45, 0.6);
+        legFront.castShadow = true;
+        rowGroup.add(legFront);
+
+        const legBackGeom = new THREE.CylinderGeometry(0.035, 0.035, 1.55, 12);
+        const legBack = new THREE.Mesh(legBackGeom, rackMat);
+        legBack.position.set(x, 0.77, -0.6);
+        legBack.castShadow = true;
+        rowGroup.add(legBack);
+      }
+
+      // Panel table angled at 26 degrees
+      const tableGroup = new THREE.Group();
+      tableGroup.position.set(0, 0.85, 0);
+      tableGroup.rotation.x = 0.45; // ~26 degree solar tilt
+
+      for(let r = 0; r < 2; r++){
+        for(let c = 0; c < 4; c++){
+          const p = createSolarPanel(1.05, 0.95);
+          p.position.set(-1.65 + c * 1.1, 0.04, -0.52 + r * 1.02);
+          tableGroup.add(p);
+        }
+      }
+      rowGroup.add(tableGroup);
+      return rowGroup;
+    }
+
+    const row1 = createGroundSolarRow(1.8);
+    const row2 = createGroundSolarRow(-1.2);
+    plantGroup.add(row1);
+    plantGroup.add(row2);
+
+    scene.add(plantGroup);
+
+    // --- 4. Renewable Energy Wind Turbine ---
+    const turbineGroup = new THREE.Group();
+    turbineGroup.position.set(-7.2, 0, -5.5);
+
+    // Tapered tower
+    const towerGeom = new THREE.CylinderGeometry(0.12, 0.28, 8.5, 24);
+    const towerMat = new THREE.MeshStandardMaterial({ color: 0xF5F5F5, roughness: 0.35, metalness: 0.2 });
+    const tower = new THREE.Mesh(towerGeom, towerMat);
+    tower.position.y = 4.25;
+    tower.castShadow = true;
+    turbineGroup.add(tower);
+
+    // Nacelle
+    const nacelleGeom = new THREE.BoxGeometry(0.55, 0.4, 1.1);
+    const nacelle = new THREE.Mesh(nacelleGeom, towerMat);
+    nacelle.position.set(0, 8.5, 0.1);
+    nacelle.castShadow = true;
+    turbineGroup.add(nacelle);
+
+    // Spinner hub
+    const hubGeom = new THREE.ConeGeometry(0.22, 0.4, 18);
+    hubGeom.rotateX(Math.PI / 2);
+    const hub = new THREE.Mesh(hubGeom, towerMat);
+    hub.position.set(0, 8.5, 0.7);
+    turbineGroup.add(hub);
+
+    // 3 Aerodynamic Blades
+    const rotorGroup = new THREE.Group();
+    rotorGroup.position.set(0, 8.5, 0.72);
+
+    for(let b = 0; b < 3; b++){
+      const bladeGeom = new THREE.BoxGeometry(0.14, 3.4, 0.03);
+      bladeGeom.translate(0, 1.7, 0);
+      const blade = new THREE.Mesh(bladeGeom, towerMat);
+      blade.rotation.z = b * (Math.PI * 2 / 3);
+      blade.rotation.y = 0.12; // Aerodynamic pitch
+      blade.castShadow = true;
+      rotorGroup.add(blade);
+    }
+    turbineGroup.add(rotorGroup);
+
+    scene.add(turbineGroup);
+
+    // --- 5. Power Grid Utility Pole & Electric Transmission ---
+    const gridGroup = new THREE.Group();
+    gridGroup.position.set(7.5, 0, 4.5);
+
+    // Utility pole
+    const poleGeom = new THREE.CylinderGeometry(0.09, 0.12, 5.0, 16);
+    const poleMat = new THREE.MeshStandardMaterial({ color: 0x607D8B, roughness: 0.8 });
+    const pole = new THREE.Mesh(poleGeom, poleMat);
+    pole.position.y = 2.5;
+    pole.castShadow = true;
+    gridGroup.add(pole);
+
+    // Crossarm
+    const armGeom = new THREE.BoxGeometry(1.6, 0.1, 0.1);
+    const arm = new THREE.Mesh(armGeom, poleMat);
+    arm.position.y = 4.6;
+    gridGroup.add(arm);
+
+    // Insulators
+    const insGeom = new THREE.CylinderGeometry(0.05, 0.05, 0.18, 10);
+    const insMat = new THREE.MeshStandardMaterial({ color: 0xE0E0E0, roughness: 0.2 });
+    for(let ix = -0.65; ix <= 0.65; ix += 0.65){
+      const ins = new THREE.Mesh(insGeom, insMat);
+      ins.position.set(ix, 4.75, 0);
+      gridGroup.add(ins);
+    }
+
+    // Transformer drum
+    const transGeom = new THREE.CylinderGeometry(0.24, 0.24, 0.65, 16);
+    const transMat = new THREE.MeshStandardMaterial({ color: 0x455A64, roughness: 0.6 });
+    const trans = new THREE.Mesh(transGeom, transMat);
+    trans.position.set(0.25, 3.7, 0.1);
+    gridGroup.add(trans);
+
+    scene.add(gridGroup);
+
+    // Power Lines (curved cable connecting House to Grid Pole)
+    const cableCurve = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(-0.85, 1.8, 1.9), // House connection
+      new THREE.Vector3(3.2, 4.2, 3.4),    // Sag midpoint
+      new THREE.Vector3(6.9, 4.6, 4.5)     // Pole crossarm
+    );
+    const cablePoints = cableCurve.getPoints(24);
+    const cableGeom = new THREE.BufferGeometry().setFromPoints(cablePoints);
+    const cableMat = new THREE.LineBasicMaterial({ color: 0x212121, linewidth: 2 });
+    const cableLine = new THREE.Line(cableGeom, cableMat);
+    scene.add(cableLine);
+
+    // Glowing Electricity Flow Packets (Net Metering Pulses)
+    const pulseCount = 6;
+    const pulseSpheres = [];
+    const pulseGeom = new THREE.SphereGeometry(0.08, 12, 12);
+    const pulseMat = new THREE.MeshBasicMaterial({ color: 0x00E676 });
+
+    for(let p = 0; p < pulseCount; p++){
+      const pulseMesh = new THREE.Mesh(pulseGeom, pulseMat);
+      scene.add(pulseMesh);
+      pulseSpheres.push({
+        mesh: pulseMesh,
+        t: p / pulseCount
+      });
+    }
+
+    // --- 6. Stylized Low-Poly Trees & Eco Landscape ---
+    function createTree(x, z, scale){
+      const tree = new THREE.Group();
+      tree.position.set(x, 0, z);
+      tree.scale.set(scale, scale, scale);
+
+      const trunkGeom = new THREE.CylinderGeometry(0.08, 0.12, 0.8, 8);
+      const trunkMat = new THREE.MeshStandardMaterial({ color: 0x5D4037, roughness: 0.9 });
+      const trunk = new THREE.Mesh(trunkGeom, trunkMat);
+      trunk.position.y = 0.4;
+      trunk.castShadow = true;
+      tree.add(trunk);
+
+      // Stacked foliage cones
+      const foliageMat = new THREE.MeshStandardMaterial({ color: 0x2E7D32, roughness: 0.6 });
+      const cone1 = new THREE.Mesh(new THREE.ConeGeometry(0.75, 1.2, 7), foliageMat);
+      cone1.position.y = 1.1;
+      cone1.castShadow = true;
+      tree.add(cone1);
+
+      const cone2 = new THREE.Mesh(new THREE.ConeGeometry(0.55, 1.0, 7), foliageMat);
+      cone2.position.y = 1.8;
+      cone2.castShadow = true;
+      tree.add(cone2);
+
+      scene.add(tree);
+    }
+
+    createTree(-6.5, 2.5, 1.1);
+    createTree(-7.5, 0.2, 0.9);
+    createTree(-5.8, -3.2, 1.2);
+    createTree(1.5, -4.8, 1.0);
+    createTree(6.2, -4.2, 1.1);
+    createTree(-1.8, -4.2, 0.8);
+
+    // --- 7. Dynamic 3D Sun & Photon Particle Stream ---
+    const sunGroup = new THREE.Group();
+    const sunCoreGeom = new THREE.SphereGeometry(1.3, 24, 24);
+    const sunCoreMat = new THREE.MeshBasicMaterial({ color: 0xFFD54F });
+    const sunCore = new THREE.Mesh(sunCoreGeom, sunCoreMat);
+    sunGroup.add(sunCore);
+
+    // Outer warm corona
+    const coronaGeom = new THREE.SphereGeometry(1.8, 24, 24);
+    const coronaMat = new THREE.MeshBasicMaterial({
+      color: 0xFFA000,
+      transparent: true,
+      opacity: 0.35
+    });
+    const sunCorona = new THREE.Mesh(coronaGeom, coronaMat);
+    sunGroup.add(sunCorona);
+
+    scene.add(sunGroup);
+
+    // Solar Photon Particle Flow (Particles travelling from Sun to Solar Panels)
+    const photonCount = 50;
+    const photonPositions = new Float32Array(photonCount * 3);
+    const photonProgress = new Float32Array(photonCount);
+
+    for(let i = 0; i < photonCount; i++){
+      photonProgress[i] = Math.random();
+    }
+    const photonGeom = new THREE.BufferGeometry();
+    photonGeom.setAttribute('position', new THREE.BufferAttribute(photonPositions, 3));
+    const photonMat = new THREE.PointsMaterial({
+      color: 0xFFE082,
+      size: 0.22,
+      transparent: true,
+      opacity: 0.8
+    });
+    const photonSystem = new THREE.Points(photonGeom, photonMat);
+    scene.add(photonSystem);
+
+    // --- Camera View Targets & Presets ---
+    const cameraTargets = {
+      roof: {
+        pos: new THREE.Vector3(3.5, 4.5, 8.5),
+        look: new THREE.Vector3(-2.8, 2.0, 0.5)
+      },
+      plant: {
+        pos: new THREE.Vector3(8.5, 4.2, 6.0),
+        look: new THREE.Vector3(4.0, 1.2, -0.8)
+      },
+      grid: {
+        pos: new THREE.Vector3(13.0, 9.5, 14.0),
+        look: new THREE.Vector3(0, 1.5, 0)
+      }
     };
 
-    if(!payload.property_type){ showAlert('error', '<b>Please select</b> a property type.'); return; }
-    if(!payload.roof_type){ showAlert('error', '<b>Please select</b> your roof type &amp; space.'); return; }
-    if(!payload.timeline){ showAlert('error', '<b>Please select</b> your installation timeline.'); return; }
+    let currentTarget = cameraTargets.roof;
+    let currentLook = new THREE.Vector3().copy(currentTarget.look);
 
-    btn.disabled = true;
-    const originalBtn = btn.innerHTML;
-    btn.innerHTML = '<span class="btn-spinner"></span> Sending…';
-
-    try{
-      const res = await fetch(LEADS_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+    // Handle View Presets
+    const viewButtons = container.querySelectorAll('.view-btn');
+    viewButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        viewButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const viewKey = btn.getAttribute('data-view');
+        if(cameraTargets[viewKey]){
+          currentTarget = cameraTargets[viewKey];
+        }
       });
-      const data = await res.json().catch(()=>({}));
+    });
 
-      if(res.ok && data.ok){
-        showAlert('success',
-          '<b>Thank you, ' + escapeHtml(payload.full_name) + '!</b><br>' +
-          'Your quotation request has been received. Our sales team will call you shortly on <b>' +
-          escapeHtml(payload.phone) + '</b> to schedule your free site survey.'
-        );
-        form.reset();
-        return;
+    // Sun Position Slider Controller
+    const sunSlider = document.getElementById('sunSlider');
+    const hudLiveKw = document.getElementById('hudLiveKw');
+    const sunTimeLabel = document.getElementById('sunTimeLabel');
+
+    let sunAngle = Math.PI * 0.5; // Noon by default
+
+    function updateSunFromSlider(){
+      const val = parseInt(sunSlider ? sunSlider.value : 50, 10);
+      // Angle mapped from 0 (Morning 8 AM) to 100 (Sunset 6:30 PM)
+      sunAngle = (val / 100) * Math.PI;
+
+      const sunDist = 20;
+      const sx = -Math.cos(sunAngle) * sunDist;
+      const sy = Math.max(1.5, Math.sin(sunAngle) * 16 + 2);
+      const sz = Math.sin(sunAngle) * 8 + 4;
+
+      sunGroup.position.set(sx, sy, sz);
+      sunLight.position.set(sx, sy, sz);
+
+      // Calculate generation in kW
+      const factor = Math.max(0, Math.sin(sunAngle));
+      const peakKw = 4.8;
+      const liveKw = (factor * peakKw).toFixed(1);
+      if(hudLiveKw) hudLiveKw.textContent = liveKw;
+
+      // Adjust sunlight intensity & scene ambiance
+      sunLight.intensity = factor * 1.4 + 0.1;
+      hemiLight.intensity = factor * 0.5 + 0.2;
+
+      // Update Time Label
+      if(sunTimeLabel){
+        if(val <= 20){
+          sunTimeLabel.textContent = '08:30 AM (Morning Rays)';
+        } else if(val <= 40){
+          sunTimeLabel.textContent = '10:30 AM (Active Solar)';
+        } else if(val <= 60){
+          sunTimeLabel.textContent = '12:30 PM (Peak Generation)';
+        } else if(val <= 80){
+          sunTimeLabel.textContent = '03:30 PM (Afternoon Sun)';
+        } else {
+          sunTimeLabel.textContent = '06:00 PM (Sunset / Net Feed)';
+        }
       }
 
-      if(res.status === 429){
-        showAlert('error',
-          '<b>Request already received.</b><br>' +
-          (data.detail || 'We already have a recent request from this phone/email. Our team will call you shortly.')
-        );
-        return;
+      // If low sun (night/dusk), warm window illumination
+      if(factor < 0.25){
+        winMat.emissive.setHex(0xFFB300);
+        winMat.emissiveIntensity = 0.8;
+      } else {
+        winMat.emissive.setHex(0x002233);
+        winMat.emissiveIntensity = 0.2;
       }
-
-      const msg = (data && (data.detail || data.message)) || ('Something went wrong (HTTP ' + res.status + '). Please try again.');
-      showAlert('error', '<b>Could not submit.</b><br>' + escapeHtml(msg));
-    } catch(err){
-      showAlert('error',
-        '<b>Network error.</b><br>Please check your connection and try again, or call us directly.'
-      );
-    } finally{
-      btn.disabled = false;
-      btn.innerHTML = originalBtn;
     }
-  }
 
-  function escapeHtml(s){
-    return String(s == null ? '' : s)
-      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-      .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    if(sunSlider){
+      sunSlider.addEventListener('input', updateSunFromSlider);
+    }
+    updateSunFromSlider();
+
+    // --- Interactive Orbit & Drag Controller ---
+    let isDragging = false;
+    let prevMouseX = 0;
+    let prevMouseY = 0;
+    let userInteractedTime = 0;
+
+    function onPointerDown(e){
+      isDragging = true;
+      prevMouseX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+      prevMouseY = e.clientY || (e.touches && e.touches[0].clientY) || 0;
+      userInteractedTime = Date.now();
+    }
+
+    function onPointerMove(e){
+      if(!isDragging) return;
+      const clientX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+      const clientY = e.clientY || (e.touches && e.touches[0].clientY) || 0;
+      const deltaX = clientX - prevMouseX;
+      const deltaY = clientY - prevMouseY;
+      prevMouseX = clientX;
+      prevMouseY = clientY;
+      userInteractedTime = Date.now();
+
+      // Rotate camera around look target
+      const offset = camera.position.clone().sub(currentLook);
+      let radius = offset.length();
+      let theta = Math.atan2(offset.x, offset.z);
+      let phi = Math.acos(Math.max(-1, Math.min(1, offset.y / radius)));
+
+      theta -= deltaX * 0.007;
+      phi = Math.max(0.2, Math.min(Math.PI / 2 - 0.05, phi - deltaY * 0.007));
+
+      offset.x = radius * Math.sin(phi) * Math.sin(theta);
+      offset.y = radius * Math.cos(phi);
+      offset.z = radius * Math.sin(phi) * Math.cos(theta);
+
+      camera.position.copy(currentLook).add(offset);
+      camera.lookAt(currentLook);
+    }
+
+    function onPointerUp(){
+      isDragging = false;
+    }
+
+    canvas.addEventListener('mousedown', onPointerDown);
+    window.addEventListener('mousemove', onPointerMove);
+    window.addEventListener('mouseup', onPointerUp);
+
+    canvas.addEventListener('touchstart', onPointerDown, { passive: true });
+    window.addEventListener('touchmove', onPointerMove, { passive: true });
+    window.addEventListener('touchend', onPointerUp);
+
+    // Zoom on wheel
+    canvas.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      userInteractedTime = Date.now();
+      const offset = camera.position.clone().sub(currentLook);
+      let dist = offset.length();
+      dist = Math.max(6, Math.min(28, dist + e.deltaY * 0.015));
+      offset.setLength(dist);
+      camera.position.copy(currentLook).add(offset);
+      camera.lookAt(currentLook);
+    }, { passive: false });
+
+    // Handle Resize
+    function handleResize(){
+      width = container.clientWidth || 500;
+      height = container.clientHeight || 460;
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(width, height);
+    }
+    window.addEventListener('resize', handleResize);
+
+    // Performance: Pause RAF when stage is scrolled off screen
+    let isVisible = true;
+    const observer = new IntersectionObserver((entries) => {
+      isVisible = entries[0].isIntersecting;
+    }, { threshold: 0.1 });
+    observer.observe(container);
+
+    // Animation Loop
+    let clock = new THREE.Clock();
+
+    function animate(){
+      requestAnimationFrame(animate);
+      if(!isVisible) return;
+
+      const delta = clock.getDelta();
+      const elapsed = clock.getElapsedTime();
+
+      // 1. Rotate Wind Turbine Rotor
+      rotorGroup.rotation.z += 0.024;
+
+      // 2. Pulse Inverter LED
+      ledMesh.material.color.setHex(Math.sin(elapsed * 4) > 0 ? 0x00E676 : 0x00B0FF);
+
+      // 3. Move Net Metering electricity packets along power cable
+      pulseSpheres.forEach(p => {
+        p.t = (p.t + delta * 0.35) % 1;
+        const pt = cableCurve.getPoint(p.t);
+        p.mesh.position.copy(pt);
+      });
+
+      // 4. Update Solar Photon Stream
+      const targetPanelPos = new THREE.Vector3(-2.5, 2.9, 1.2);
+      const sunPos = sunGroup.position;
+      const posArray = photonGeom.attributes.position.array;
+
+      for(let i = 0; i < photonCount; i++){
+        photonProgress[i] = (photonProgress[i] + delta * 0.5) % 1;
+        const pr = photonProgress[i];
+        // Jitter landing spot over panels
+        const spreadX = (Math.sin(i * 99) * 2.2);
+        const spreadZ = (Math.cos(i * 77) * 1.5);
+        const landPos = targetPanelPos.clone().add(new THREE.Vector3(spreadX, 0, spreadZ));
+
+        const curX = sunPos.x + (landPos.x - sunPos.x) * pr;
+        const curY = sunPos.y + (landPos.y - sunPos.y) * pr;
+        const curZ = sunPos.z + (landPos.z - sunPos.z) * pr;
+
+        posArray[i * 3] = curX;
+        posArray[i * 3 + 1] = curY;
+        posArray[i * 3 + 2] = curZ;
+      }
+      photonGeom.attributes.position.needsUpdate = true;
+
+      // 5. Smooth Camera Movement towards current target
+      if(Date.now() - userInteractedTime > 4000){
+        // Gentle auto idle orbit around the scene
+        const offset = camera.position.clone().sub(currentLook);
+        const radius = offset.length();
+        let theta = Math.atan2(offset.x, offset.z);
+        let phi = Math.acos(Math.max(-1, Math.min(1, offset.y / radius)));
+        theta += 0.0015;
+        offset.x = radius * Math.sin(phi) * Math.sin(theta);
+        offset.y = radius * Math.cos(phi);
+        offset.z = radius * Math.sin(phi) * Math.cos(theta);
+        camera.position.copy(currentLook).add(offset);
+      } else if(!isDragging){
+        camera.position.lerp(currentTarget.pos, 0.04);
+        currentLook.lerp(currentTarget.look, 0.04);
+      }
+      camera.lookAt(currentLook);
+
+      renderer.render(scene, camera);
+    }
+    animate();
+  })();
+
+  /* ----------------- 3D Card Perspective Tilt Effect ------------------ */
+  (function initCardTilt(){
+    const tiltCards = document.querySelectorAll('[data-tilt], .why-card, .sol-card, .pm-step-item');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotX = ((y - centerY) / centerY) * -5;
+        const rotY = ((x - centerX) / centerX) * 5;
+        card.style.transform = `perspective(1000px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+  })();
+
+    const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
   }
 </script>
 

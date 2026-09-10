@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Energy Solutions: Residential, Commercial &amp; Agricultural | Step Solar</title>
+<meta name="description" content="Customized solar energy solutions for homes, shops, commercial establishments, and farmers across UP &amp; Bihar. Residential rooftop solar, commercial plants, and solar water pumps.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://stepsolar.in/solutions.html">
+<meta name="theme-color" content="#1B6FA8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --blue:#1B6FA8;
+    --blue-deep:#12507B;
+    --green:#3FA535;
+    --green-deep:#2C7C24;
+    --brown:#8A6C3F;
+    --sun:#F5A623;
+    --sand:#F4F8F4;
+    --paper:#FFFFFF;
+    --ink:#182420;
+    --ink-soft:#4B5A54;
+    --line: rgba(24,36,32,0.10);
+    --radius: 14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  h1,h2,h3,.display{font-family:'Space Grotesk', sans-serif; letter-spacing:-0.01em;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--green-deep);
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{content:"";width:18px;height:2px;background:var(--sun);display:inline-block;}
+
+  header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(244,248,244,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand img{height:42px; width:auto;}
+  .brand-text{font-family:'Space Grotesk'; font-weight:700; font-size:1.05rem; line-height:1.1;}
+  .brand-text span{display:block; font-family:'Inter'; font-weight:500; font-size:0.66rem; letter-spacing:0.12em; color:var(--ink-soft); text-transform:uppercase; margin-top:2px;}
+  nav.links{display:flex; gap:26px; font-size:0.92rem; font-weight:500;}
+  nav.links a{color:var(--ink-soft); transition:color .2s;}
+  nav.links a:hover, nav.links a.active{color:var(--blue); font-weight:600;}
+  
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:12px 22px; border-radius:999px; font-weight:600; font-size:0.9rem;
+    border:none; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-sun{background:var(--sun); color:#2A1A00; box-shadow:0 6px 20px -6px rgba(245,166,35,0.7);}
+  .btn-sun:hover{transform:translateY(-2px); box-shadow:0 10px 26px -6px rgba(245,166,35,0.85);}
+  .btn-ghost{background:transparent; border:1.5px solid var(--line); color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--blue); color:var(--blue);}
+
+  .menu-toggle{display:none; background:none; border:none; font-size:1.6rem; cursor:pointer;}
+  .mobile-nav{display:none; flex-direction:column; padding:16px 24px 24px; background:rgba(244,248,244,0.98); border-bottom:1px solid var(--line); gap:14px;}
+  .mobile-nav.open{display:flex;}
+  .mobile-nav a{font-size:1rem; font-weight:500; color:var(--ink-soft);}
+  .mobile-nav a.active{color:var(--blue); font-weight:600;}
+  @media (max-width:860px){
+    nav.links{display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  .page-hero{
+    padding:60px 0 40px;
+    background:linear-gradient(180deg, rgba(27,111,168,0.08) 0%, transparent 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .page-hero h1{font-size:clamp(2rem,4vw,2.9rem); margin-top:12px; margin-bottom:16px;}
+  .page-hero p.lead{font-size:1.1rem; color:var(--ink-soft); max-width:760px; line-height:1.6;}
+  
+  section{padding:70px 0;}
+  .sec-head{max-width:680px; margin-bottom:36px;}
+  .sec-head h2{font-size:clamp(1.7rem,3vw,2.3rem); margin-top:10px; font-weight:700;}
+  .sec-head p{color:var(--ink-soft); margin-top:10px; font-size:0.96rem;}
+
+  /* 3 Major Solution Detailed Sections */
+  .solution-block{
+    display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center;
+    background:var(--paper); border:1.5px solid var(--line); border-radius:24px;
+    padding:44px; margin-bottom:36px; box-shadow:0 10px 30px -10px rgba(0,0,0,0.05);
+  }
+  @media (max-width:880px){
+    .solution-block{grid-template-columns:1fr; padding:28px;}
+  }
+  .solution-block.reverse{grid-template-columns:1fr 1fr;}
+  @media (min-width:881px){
+    .solution-block.reverse .solution-media{order:1;}
+    .solution-block.reverse .solution-content{order:2;}
+  }
+
+  .solution-media{
+    border-radius:18px; overflow:hidden; position:relative; aspect-ratio:16/11;
+  }
+  .solution-media img{width:100%; height:100%; object-fit:cover;}
+  .solution-badge{
+    position:absolute; top:16px; left:16px;
+    background:rgba(24,36,32,0.85); color:#fff; font-family:'IBM Plex Mono';
+    font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:999px;
+    backdrop-filter:blur(4px);
+  }
+
+  .solution-content h3{font-size:1.6rem; margin-bottom:12px; font-weight:700;}
+  .solution-content p{color:var(--ink-soft); font-size:0.95rem; line-height:1.6; margin-bottom:18px;}
+  .solution-specs{list-style:none; display:flex; flex-direction:column; gap:10px; margin-bottom:24px;}
+  .solution-specs li{font-size:0.88rem; color:var(--ink); display:flex; gap:10px; align-items:flex-start;}
+  .solution-specs li::before{content:"✓"; color:var(--green-deep); font-weight:700;}
+
+  /* Comparison Matrix */
+  .matrix-box{
+    background:var(--paper); border:1.5px solid var(--line); border-radius:22px;
+    padding:36px; margin-top:60px; overflow-x:auto;
+    box-shadow:0 10px 30px -10px rgba(0,0,0,0.05);
+  }
+  .matrix-table{width:100%; border-collapse:collapse; font-size:0.86rem; min-width:680px;}
+  .matrix-table th{
+    background:var(--sand); padding:12px 14px; text-align:left;
+    font-family:'IBM Plex Mono'; font-size:0.74rem; text-transform:uppercase;
+    color:var(--ink-soft); border-bottom:2px solid var(--line);
+  }
+  .matrix-table td{padding:14px; border-bottom:1px solid var(--line);}
+  .matrix-table tr:hover td{background:rgba(244,248,244,0.7);}
+
+  /* Stats */
+  .stats{
+    background:linear-gradient(120deg, var(--blue-deep), var(--blue) 55%, var(--green-deep));
+    color:#fff; border-radius:22px; padding:52px 40px; margin-top:50px;
+  }
+  @media (max-width:900px){ .stats{padding:38px 24px;} }
+  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:30px;}
+  @media (max-width:760px){ .stats-grid{grid-template-columns:repeat(2,1fr);} }
+  .stat .v{font-family:'IBM Plex Mono'; font-weight:600; font-size:2.2rem; color:#fff;}
+  .stat .k{font-size:0.84rem; opacity:0.9; margin-top:6px;}
+
+  /* CTA */
+  .cta-banner{
+    text-align:center; padding:50px 30px; margin-top:50px;
+    background:var(--paper); border:1.5px solid var(--line); border-radius:22px;
+  }
+  .cta-banner h3{font-size:1.8rem; margin-bottom:12px;}
+  .cta-banner p{color:var(--ink-soft); max-width:600px; margin:0 auto 24px;}
+
+  footer{background:#12241A; color:#E7EDE9; padding:56px 0 26px; margin-top:70px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  @media (max-width:760px){ .foot-grid{grid-template-columns:1fr; gap:28px;} }
+  .foot-brand{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+  .foot-brand img{height:38px; background:#fff; border-radius:8px; padding:3px;}
+  .foot-brand b{font-family:'Space Grotesk'; font-size:1.05rem;}
+  footer p{color:rgba(231,237,233,0.7); font-size:0.87rem; line-height:1.6;}
+  footer h4{font-size:0.78rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(231,237,233,0.55); margin-bottom:14px;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:9px; font-size:0.88rem;}
+  footer a:hover{color:var(--sun);}
+  .foot-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-top:22px; font-size:0.76rem; color:rgba(231,237,233,0.5);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" data-testid="brand-link">
+      <img src="logo.jpg" alt="Step Solar Energy logo" onerror="this.style.display='none'">
+      <div class="brand-text">Step Solar Energy<span>Pvt Ltd</span></div>
+    </a>
+    <nav class="links">
+      <a href="why-solar.html">Why Solar</a>
+      <a href="pm-surya-ghar.html">PM Surya Ghar</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="our-process.html">Our Process</a>
+      <a href="solutions.html" class="active">Solutions</a>
+      <a href="index.html#calculator">Savings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-sun" data-testid="nav-cta">Get Free Quotation</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="why-solar.html">Why Solar</a>
+    <a href="pm-surya-ghar.html">PM Surya Ghar</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="our-process.html">Our Process</a>
+    <a href="solutions.html" class="active">Solutions</a>
+    <a href="index.html#calculator">Savings</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-sun" style="margin-top:8px;">Get Free Quotation</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">End-To-End Solar Engineering</span>
+    <h1>Solar Energy Solutions For Every Roof, Business &amp; Farm.</h1>
+    <p class="lead">
+      Whether you want to reduce residential electricity bills to zero, eliminate high daytime commercial tariffs for your shop or business, or irrigate your agricultural fields without diesel expenses, Step Solar delivers precision-engineered solar systems.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+
+    <!-- Solution 1: Residential -->
+    <div class="solution-block">
+      <div class="solution-media">
+        <img src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Residential rooftop solar installation">
+        <span class="solution-badge">RESIDENTIAL ROOFTOP</span>
+      </div>
+      <div class="solution-content">
+        <span class="eyebrow">Homes &amp; Housing Societies</span>
+        <h3>Home Rooftop Solar (1 kW – 10 kW)</h3>
+        <p>
+          Transform your home into an independent clean energy generator. Designed for residential houses and apartments with sloped or flat concrete rooftops. Claim maximum government subsidies under PM Surya Ghar and state policies.
+        </p>
+        <ul class="solution-specs">
+          <li><b>Subsidies:</b> Up to ₹1,08,000 Direct Bank Transfer (Central DBT + UPNEDA / BREDA)</li>
+          <li><b>Savings:</b> Up to 90% reduction on monthly DISCOM power bills</li>
+          <li><b>Net Metering:</b> Export surplus units generated during daytime back to the grid</li>
+          <li><b>Hardware:</b> Tier-1 Monocrystalline Bifacial panels with 25-year performance warranty</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sun">Get Residential Quote</a>
+      </div>
+    </div>
+
+    <!-- Solution 2: Commercial -->
+    <div class="solution-block reverse">
+      <div class="solution-media">
+        <img src="https://images.unsplash.com/photo-1664828113992-8dd7a26275a0?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Commercial rooftop solar panels">
+        <span class="solution-badge">COMMERCIAL &amp; INDUSTRIAL</span>
+      </div>
+      <div class="solution-content">
+        <span class="eyebrow">Shops, Schools &amp; Small Industry</span>
+        <h3>Commercial Solar Power Plants (10 kW – 100+ kW)</h3>
+        <p>
+          Commercial power tariffs in UP &amp; Bihar are among the highest operational expenses. Solar systems generate power during peak business daytime hours, directly offsetting expensive commercial grid units.
+        </p>
+        <ul class="solution-specs">
+          <li><b>Tax Benefits:</b> 40% Accelerated Depreciation benefit under Section 32 of Income Tax Act</li>
+          <li><b>Tariff Hedge:</b> Lock in clean power costs at ~₹2.50/unit for the next 25 years</li>
+          <li><b>Ideal For:</b> Mandis, cold storage, hospitals, schools, retail shops, and warehouses</li>
+          <li><b>Monitoring:</b> Remote 24/7 cloud generation monitoring via dedicated mobile app</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sun">Get Commercial Proposal</a>
+      </div>
+    </div>
+
+    <!-- Solution 3: Agriculture -->
+    <div class="solution-block">
+      <div class="solution-media">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Agricultural solar water pump and field">
+        <span class="solution-badge">AGRICULTURAL &amp; FARMS</span>
+      </div>
+      <div class="solution-content">
+        <span class="eyebrow">Farms &amp; Irrigation</span>
+        <h3>Solar Water Pumps &amp; Farm Arrays (PM-KUSUM)</h3>
+        <p>
+          Eliminate high diesel engine expenses and unreliable rural grid power. Step Solar installs 3 HP, 5 HP, and 7.5 HP submersible and surface solar water pump sets for reliable daytime farm irrigation.
+        </p>
+        <ul class="solution-specs">
+          <li><b>Zero Fuel Cost:</b> No recurring diesel purchases; 100% solar powered operation</li>
+          <li><b>High Reliability:</b> Reliable daytime water discharge even during grid outages</li>
+          <li><b>Subsidies:</b> Financial assistance available under the PM-KUSUM scheme</li>
+          <li><b>Durability:</b> Heavy-duty IP68 submersible pumps and galvanized ground mounting</li>
+        </ul>
+        <a href="contact.html" class="btn btn-sun">Enquire for Solar Pump</a>
+      </div>
+    </div>
+
+    <!-- Comparison Matrix -->
+    <div class="matrix-box">
+      <span class="eyebrow">Quick Comparison</span>
+      <h3 style="font-size:1.35rem; margin-top:6px; margin-bottom:14px;">Sector Overview &amp; ROI Timeline</h3>
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Segment</th>
+            <th>Capacity Range</th>
+            <th>Typical Target Users</th>
+            <th>Available Subsidies</th>
+            <th>Payback Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Residential</b></td>
+            <td>1 kW – 10 kW</td>
+            <td>Independent houses, bungalows, villas</td>
+            <td>Up to ₹1,08,000 (PM Surya Ghar + State DBT)</td>
+            <td><b>2 – 3 Years</b></td>
+          </tr>
+          <tr>
+            <td><b>Commercial</b></td>
+            <td>10 kW – 100 kW+</td>
+            <td>Shops, mandis, hospitals, colleges, hotels</td>
+            <td>40% Accelerated Depreciation &amp; Net Metering</td>
+            <td><b>3 – 4 Years</b></td>
+          </tr>
+          <tr>
+            <td><b>Agricultural</b></td>
+            <td>3 HP – 10 HP</td>
+            <td>Farms, orchards, tube-wells, fisheries</td>
+            <td>PM-KUSUM government subsidy support</td>
+            <td><b>Under 2 Years (vs Diesel)</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Performance Numbers -->
+    <div class="stats">
+      <span class="eyebrow" style="color:#D7E8FF;">Operational Excellence</span>
+      <h2 style="font-size:2rem; margin-top:6px;">Proven Benefits Across Every Sector</h2>
+      <p style="opacity:0.9; margin-top:6px;">Illustrative figures based on typical installations in Uttar Pradesh and Bihar.</p>
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="v">25 Yrs</div>
+          <div class="k">Panel Warranty Protection</div>
+        </div>
+        <div class="stat">
+          <div class="v">~90%</div>
+          <div class="k">Average Bill Reduction</div>
+        </div>
+        <div class="stat">
+          <div class="v">₹0</div>
+          <div class="k">Free 1st-Year Maintenance</div>
+        </div>
+        <div class="stat">
+          <div class="v">7 Steps</div>
+          <div class="k">Tracked Enquiry to Handover</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+      <h3>Need Help Determining The Right Capacity?</h3>
+      <p>Our engineers will analyze your monthly power bills or pump requirements to suggest the optimal kilowatt configuration.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-sun">Request Free Solar Assessment</a>
+        <a href="index.html#calculator" class="btn btn-ghost">Calculate Estimated Savings</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="logo.jpg" alt="Step Solar logo" onerror="this.style.display='none'">
+          <b>Step Solar Energy Pvt Ltd</b>
+        </div>
+        <p><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">Satramganj Bazar, Bhadaura,<br>Uttar Pradesh – 232333 · View on Google Maps</a></p>
+        <p style="margin-top:10px;">GST: 09ABPCS3779K1ZC<br>CIN: U42201UP2025PTC217484</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="why-solar.html">Why Solar</a></li>
+          <li><a href="pm-surya-ghar.html">PM Surya Ghar</a></li>
+          <li><a href="our-process.html">Our Process</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="contact.html">Request a Quotation</a></li>
+          <li><a href="tel:+919519956600">+91 95199 56600</a></li>
+          <li><a href="mailto:sales@stepsolar.in">sales@stepsolar.in</a></li>
+          <li><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">View office on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Step Solar Energy Pvt Ltd. All rights reserved.</span>
+      <span>Freedom · Future · Savings</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  }
+</script>
+</body>
+</html>
+
