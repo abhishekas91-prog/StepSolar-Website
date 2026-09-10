@@ -21,6 +21,22 @@
   to = "https://stepsolar.in/:splat"
   status = 301
 
+# Local SEO programmatic rewrites to locations.html
+[[redirects]]
+  from = "/solar-panel-installation-:city/"
+  to = "/locations.html?city=:city"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-:city"
+  to = "/locations.html?city=:city"
+  status = 200
+
+[[redirects]]
+  from = "/locations"
+  to = "/locations.html"
+  status = 200
+
 # Marketing website at the root.
 [[redirects]]
   from = "/"

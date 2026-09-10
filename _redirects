@@ -8,8 +8,15 @@
 # update the target to the CRM's deployed origin)
 https://admin.stepsolar.in/*     https://admin.stepsolar.in/crm.html                    200
 
+# Service areas & Programmatic Local SEO rewrites (Consolidated to locations.html)
+/locations                       /locations.html                                         200
+/service-areas                   /locations.html                                         200
+/solar-panel-installation-:city/ /locations.html?city=:city                              200
+/solar-panel-installation-:city  /locations.html?city=:city                              200
+
 # Canonical domain: www → apex
 https://www.stepsolar.in/*       https://stepsolar.in/:splat                             301
 
 # Marketing website at the root
 /                               /index.html                                             200
+

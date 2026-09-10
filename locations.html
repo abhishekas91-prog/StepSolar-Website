@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Installation Locations | Uttar Pradesh &amp; Bihar Districts | Step Solar</title>
+<meta name="description" content="Explore rooftop solar panel installation services across all 75 districts of Uttar Pradesh and 38 districts of Bihar. Check regional DISCOMs, PM Surya Ghar and state subsidies up to ₹1,08,000.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://stepsolar.in/locations.html">
+<meta name="theme-color" content="#1B6FA8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --blue:#1B6FA8;
+    --blue-deep:#12507B;
+    --green:#3FA535;
+    --green-deep:#2C7C24;
+    --brown:#8A6C3F;
+    --sun:#F5A623;
+    --sand:#F4F8F4;
+    --paper:#FFFFFF;
+    --ink:#182420;
+    --ink-soft:#4B5A54;
+    --line: rgba(24,36,32,0.10);
+    --radius: 14px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  h1,h2,h3,.display{font-family:'Space Grotesk', sans-serif; letter-spacing:-0.01em;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--green-deep);
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{content:"";width:18px;height:2px;background:var(--sun);display:inline-block;}
+
+  header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(244,248,244,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand img{height:42px; width:auto;}
+  .brand-text{font-family:'Space Grotesk'; font-weight:700; font-size:1.05rem; line-height:1.1;}
+  .brand-text span{display:block; font-family:'Inter'; font-weight:500; font-size:0.66rem; letter-spacing:0.12em; color:var(--ink-soft); text-transform:uppercase; margin-top:2px;}
+  nav.links{display:flex; gap:26px; font-size:0.92rem; font-weight:500;}
+  nav.links a{color:var(--ink-soft); transition:color .2s;}
+  nav.links a:hover, nav.links a.active{color:var(--blue); font-weight:600;}
+  
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:12px 22px; border-radius:999px; font-weight:600; font-size:0.9rem;
+    border:none; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-sun{background:var(--sun); color:#2A1A00; box-shadow:0 6px 20px -6px rgba(245,166,35,0.7);}
+  .btn-sun:hover{transform:translateY(-2px); box-shadow:0 10px 26px -6px rgba(245,166,35,0.85);}
+  .btn-ghost{background:transparent; border:1.5px solid var(--line); color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--blue); color:var(--blue);}
+  .btn-sm{padding:8px 14px; font-size:0.8rem;}
+
+  .menu-toggle{display:none; background:none; border:none; font-size:1.6rem; cursor:pointer;}
+  .mobile-nav{display:none; flex-direction:column; padding:16px 24px 24px; background:rgba(244,248,244,0.98); border-bottom:1px solid var(--line); gap:14px;}
+  .mobile-nav.open{display:flex;}
+  .mobile-nav a{font-size:1rem; font-weight:500; color:var(--ink-soft);}
+  .mobile-nav a.active{color:var(--blue); font-weight:600;}
+  @media (max-width:860px){
+    nav.links{display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  .page-hero{
+    padding:60px 0 40px;
+    background:linear-gradient(180deg, rgba(27,111,168,0.08) 0%, transparent 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .page-hero h1{font-size:clamp(2rem,4vw,2.9rem); margin-top:12px; margin-bottom:16px;}
+  .page-hero p.lead{font-size:1.1rem; color:var(--ink-soft); max-width:780px; line-height:1.6;}
+  
+  section{padding:50px 0 80px;}
+
+  /* Search & Filter Controls */
+  .filter-container{
+    background:var(--paper); border:1.5px solid var(--line); border-radius:20px;
+    padding:24px 28px; margin-bottom:36px;
+    box-shadow:0 8px 24px -8px rgba(0,0,0,0.04);
+  }
+  .filter-row{display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap;}
+  
+  .search-box{position:relative; flex:1; min-width:280px;}
+  .search-box input{
+    width:100%; padding:14px 18px 14px 44px; border-radius:999px;
+    border:1.5px solid var(--line); background:var(--sand);
+    font-family:'Inter'; font-size:0.95rem; color:var(--ink);
+  }
+  .search-box input:focus{outline:none; border-color:var(--blue); background:#fff;}
+  .search-box .icon{position:absolute; left:16px; top:50%; transform:translateY(-50%); font-size:1.1rem; color:var(--ink-soft);}
+  
+  .state-tabs{display:flex; gap:8px; flex-wrap:wrap;}
+  .tab-btn{
+    padding:10px 18px; border-radius:999px; border:1.5px solid var(--line);
+    background:var(--sand); color:var(--ink-soft); font-weight:600; font-size:0.86rem;
+    cursor:pointer; transition:all .18s;
+  }
+  .tab-btn:hover{border-color:var(--blue); color:var(--blue);}
+  .tab-btn.active{background:var(--blue); color:#fff; border-color:var(--blue);}
+
+  .results-meta{font-size:0.84rem; color:var(--ink-soft); font-family:'IBM Plex Mono'; margin:18px 0 24px;}
+
+  /* District Card Grid */
+  .districts-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+  }
+  @media (max-width:960px){ .districts-grid{grid-template-columns:repeat(2, 1fr);} }
+  @media (max-width:560px){ .districts-grid{grid-template-columns:1fr;} }
+
+  .dist-card{
+    background:var(--paper); border:1.5px solid var(--line); border-radius:18px;
+    padding:22px; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    display:flex; flex-direction:column; justify-content:space-between;
+    box-shadow:0 6px 18px -6px rgba(0,0,0,0.03);
+  }
+  .dist-card:hover{
+    transform:translateY(-3px); border-color:var(--blue);
+    box-shadow:0 12px 28px -8px rgba(27,111,168,0.15);
+  }
+  .dist-card-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;}
+  .dist-card h3{font-size:1.18rem; font-weight:700; color:var(--ink);}
+  .dist-state-badge{
+    font-family:'IBM Plex Mono'; font-size:0.7rem; font-weight:700;
+    padding:3px 8px; border-radius:6px; background:rgba(27,111,168,0.1); color:var(--blue-deep);
+  }
+  .dist-state-badge.br{background:rgba(63,165,53,0.1); color:var(--green-deep);}
+  
+  .dist-info-row{font-size:0.82rem; color:var(--ink-soft); margin-bottom:6px; display:flex; gap:6px;}
+  .dist-info-row b{color:var(--ink);}
+  .dist-subsidy-tag{
+    font-size:0.75rem; font-family:'IBM Plex Mono'; font-weight:700;
+    color:var(--green-deep); background:rgba(63,165,53,0.1);
+    padding:4px 8px; border-radius:6px; margin-top:8px; display:inline-block;
+  }
+  .dist-actions{margin-top:16px; display:flex; gap:8px;}
+
+  /* Single District Focused View Mode */
+  .focused-hero{
+    display:none; background:linear-gradient(135deg, #FFFFFF 0%, #F4FAF4 100%);
+    border:2px solid var(--green); border-radius:24px; padding:36px; margin-bottom:40px;
+    box-shadow:0 16px 40px -10px rgba(63,165,53,0.15);
+  }
+  .focused-hero.show{display:block;}
+  .focused-hero h2{font-size:2rem; margin:10px 0 14px;}
+  .focused-hero p{font-size:1.02rem; color:var(--ink-soft); max-width:800px; line-height:1.6;}
+  .focused-tags{display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 24px;}
+  .focused-tag{
+    background:var(--paper); border:1px solid var(--line); padding:6px 12px;
+    border-radius:8px; font-size:0.82rem; font-weight:600;
+  }
+  .focused-cta-row{display:flex; gap:12px; flex-wrap:wrap;}
+  .back-to-all{display:inline-flex; align-items:center; gap:6px; font-size:0.86rem; color:var(--blue); font-weight:600; cursor:pointer; margin-bottom:12px;}
+  .back-to-all:hover{text-decoration:underline;}
+
+  /* Empty state */
+  .no-results{
+    text-align:center; padding:60px 20px; background:var(--paper);
+    border:1px dashed var(--line); border-radius:18px; grid-column:1/-1; display:none;
+  }
+  .no-results h3{font-size:1.3rem; margin-bottom:8px;}
+  .no-results p{color:var(--ink-soft); font-size:0.92rem;}
+
+  footer{background:#12241A; color:#E7EDE9; padding:56px 0 26px; margin-top:70px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  @media (max-width:760px){ .foot-grid{grid-template-columns:1fr; gap:28px;} }
+  .foot-brand{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+  .foot-brand img{height:38px; background:#fff; border-radius:8px; padding:3px;}
+  .foot-brand b{font-family:'Space Grotesk'; font-size:1.05rem;}
+  footer p{color:rgba(231,237,233,0.7); font-size:0.87rem; line-height:1.6;}
+  footer h4{font-size:0.78rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(231,237,233,0.55); margin-bottom:14px;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:9px; font-size:0.88rem;}
+  footer a:hover{color:var(--sun);}
+  .foot-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-top:22px; font-size:0.76rem; color:rgba(231,237,233,0.5);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" data-testid="brand-link">
+      <img src="logo.jpg" alt="Step Solar Energy logo" onerror="this.style.display='none'">
+      <div class="brand-text">Step Solar Energy<span>Pvt Ltd</span></div>
+    </a>
+    <nav class="links">
+      <a href="why-solar.html">Why Solar</a>
+      <a href="pm-surya-ghar.html">PM Surya Ghar</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="our-process.html">Our Process</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="locations.html" class="active">Service Areas</a>
+      <a href="index.html#calculator">Savings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-sun" data-testid="nav-cta">Get Free Quotation</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="why-solar.html">Why Solar</a>
+    <a href="pm-surya-ghar.html">PM Surya Ghar</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="our-process.html">Our Process</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="locations.html" class="active">Service Areas</a>
+    <a href="index.html#calculator">Savings</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-sun" style="margin-top:8px;">Get Free Quotation</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Operational Footprint · UP &amp; Bihar</span>
+    <h1 id="heroTitle">Solar Panel Installation Across Uttar Pradesh &amp; Bihar</h1>
+    <p class="lead" id="heroDesc">
+      Step Solar Energy provides residential rooftop solar, commercial power plants, and agricultural solar pumps across all 75 districts of Uttar Pradesh and 38 districts of Bihar. Search or select your district to view regional DISCOM details, available state &amp; central subsidies (up to ₹1,08,000), and schedule a free site survey.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+
+    <!-- Focused District View (Activated dynamically via URL query ?city=agra or click) -->
+    <div class="focused-hero" id="focusedDistrictBox">
+      <div class="back-to-all" onclick="clearFocusedDistrict()">← View all 113+ service districts in UP &amp; Bihar</div>
+      <span class="eyebrow" id="focusedEyebrow">DISTRICT COVERAGE</span>
+      <h2 id="focusedHeading">Solar Panel Installation in Agra, Uttar Pradesh</h2>
+      <p id="focusedParagraph">
+        Step Solar Energy provides certified rooftop solar panel installation for homes, commercial shops, and agricultural solar pumps in Agra. Claim up to ₹78,000 Central DBT subsidy under PM Surya Ghar and up to ₹30,000 State Top-Up under UPNEDA.
+      </p>
+      <div class="focused-tags" id="focusedTags">
+        <span class="focused-tag" id="focusedDiscom">DISCOM: DVVNL</span>
+        <span class="focused-tag" id="focusedSubsidy">Subsidy: Up to ₹1,08,000 (Central + State)</span>
+        <span class="focused-tag">Free Site Survey: Available</span>
+        <span class="focused-tag">Net Metering: Supported</span>
+      </div>
+      <div class="focused-cta-row">
+        <a href="contact.html" class="btn btn-sun" id="focusedQuoteBtn">Request Free Survey in Agra</a>
+        <a href="index.html#calculator" class="btn btn-ghost">Check Subsidy on Calculator</a>
+        <a href="tel:+919519956600" class="btn btn-ghost">📞 Call +91 95199 56600</a>
+      </div>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div class="filter-container">
+      <div class="filter-row">
+        <div class="search-box">
+          <span class="icon">🔍</span>
+          <input type="text" id="districtSearch" placeholder="Search your district or city (e.g. Agra, Patna, Ghazipur, Lucknow...)" aria-label="Search districts">
+        </div>
+        <div class="state-tabs">
+          <button type="button" class="tab-btn active" data-state="all">All (113)</button>
+          <button type="button" class="tab-btn" data-state="UP">Uttar Pradesh (75)</button>
+          <button type="button" class="tab-btn" data-state="BR">Bihar (38)</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="results-meta">
+      Showing <span id="countDisplay">113</span> service locations in Uttar Pradesh &amp; Bihar
+    </div>
+
+    <!-- Districts Grid -->
+    <div class="districts-grid" id="districtsGrid">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- No results fallback -->
+    <div class="no-results" id="noResultsBox">
+      <h3>District not found in list?</h3>
+      <p>Don't worry! We cover all regions across UP &amp; Bihar. Contact us directly to book a site survey for your area.</p>
+      <a href="contact.html" class="btn btn-sun" style="margin-top:14px;">Contact Step Solar Team</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="logo.jpg" alt="Step Solar logo" onerror="this.style.display='none'">
+          <b>Step Solar Energy Pvt Ltd</b>
+        </div>
+        <p><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">Satramganj Bazar, Bhadaura,<br>Uttar Pradesh – 232333 · View on Google Maps</a></p>
+        <p style="margin-top:10px;">GST: 09ABPCS3779K1ZC<br>CIN: U42201UP2025PTC217484</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="why-solar.html">Why Solar</a></li>
+          <li><a href="pm-surya-ghar.html">PM Surya Ghar</a></li>
+          <li><a href="our-process.html">Our Process</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="locations.html">Service Areas</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+        <h4 style="margin-top:22px;">Solar Services by Location</h4>
+        <ul>
+          <li><a href="locations.html?city=uttar-pradesh">Solar Installation in Uttar Pradesh</a></li>
+          <li><a href="locations.html?city=bihar">Solar Installation in Bihar</a></li>
+          <li><a href="locations.html?city=ghazipur">Solar Installation in Ghazipur (HQ)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul>
+          <li><a href="contact.html">Request a Quotation</a></li>
+          <li><a href="tel:+919519956600">+91 95199 56600</a></li>
+          <li><a href="mailto:sales@stepsolar.in">sales@stepsolar.in</a></li>
+          <li><a href="https://maps.app.goo.gl/CuzZMjQDTp7zeB8Q8?g_st=ac" target="_blank" rel="noopener">View office on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Step Solar Energy Pvt Ltd. All rights reserved.</span>
+      <span>Freedom · Future · Savings</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  }
+
+  /* ---------------- District Dataset for UP (75) & Bihar (38) ---------------- */
+  const districts = [
+    // --- UTTAR PRADESH (75 Districts) ---
+    { name: "Agra", slug: "agra", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Aligarh", slug: "aligarh", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Ambedkar Nagar", slug: "ambedkar-nagar", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Amethi", slug: "amethi", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Amroha", slug: "amroha", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Auraiya", slug: "auraiya", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Ayodhya", slug: "ayodhya", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Azamgarh", slug: "azamgarh", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Baghpat", slug: "baghpat", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Bahraich", slug: "bahraich", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Ballia", slug: "ballia", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Balrampur", slug: "balrampur", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Banda", slug: "banda", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Barabanki", slug: "barabanki", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Bareilly", slug: "bareilly", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Basti", slug: "basti", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Bhadohi", slug: "bhadohi", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Bijnor", slug: "bijnor", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Budaun", slug: "budaun", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Bulandshahr", slug: "bulandshahr", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Chandauli", slug: "chandauli", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Chitrakoot", slug: "chitrakoot", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Deoria", slug: "deoria", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Etah", slug: "etah", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Etawah", slug: "etawah", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Farrukhabad", slug: "farrukhabad", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Fatehpur", slug: "fatehpur", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Firozabad", slug: "firozabad", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Gautam Buddha Nagar (Noida)", slug: "gautam-buddha-nagar", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Gaya", slug: "gaya", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Ghaziabad", slug: "ghaziabad", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Ghazipur (Headquarters)", slug: "ghazipur", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Gonda", slug: "gonda", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Gorakhpur", slug: "gorakhpur", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Hamirpur", slug: "hamirpur", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Hapur", slug: "hapur", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Hardoi", slug: "hardoi", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Hathras", slug: "hathras", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Jalaun", slug: "jalaun", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Jaunpur", slug: "jaunpur", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Jhansi", slug: "jhansi", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Kannauj", slug: "kannauj", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Kanpur Dehat", slug: "kanpur-dehat", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Kanpur Nagar", slug: "kanpur-nagar", state: "Uttar Pradesh", code: "UP", discom: "KESCO", agency: "UPNEDA" },
+    { name: "Kasganj", slug: "kasganj", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Kaushambi", slug: "kaushambi", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Kushinagar", slug: "kushinagar", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Lakhimpur Kheri", slug: "lakhimpur-kheri", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Lalitpur", slug: "lalitpur", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Lucknow", slug: "lucknow", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Maharajganj", slug: "maharajganj", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Mahoba", slug: "mahoba", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Mainpuri", slug: "mainpuri", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Mathura", slug: "mathura", state: "Uttar Pradesh", code: "UP", discom: "DVVNL", agency: "UPNEDA" },
+    { name: "Mau", slug: "mau", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Meerut", slug: "meerut", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Mirzapur", slug: "mirzapur", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Moradabad", slug: "moradabad", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Muzaffarnagar", slug: "muzaffarnagar", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Pilibhit", slug: "pilibhit", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Pratapgarh", slug: "pratapgarh", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Prayagraj (Allahabad)", slug: "prayagraj", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Rae Bareli", slug: "rae-bareli", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Rampur", slug: "rampur", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Saharanpur", slug: "saharanpur", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Sambhal", slug: "sambhal", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Sant Kabir Nagar", slug: "sant-kabir-nagar", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Shahjahanpur", slug: "shahjahanpur", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Shamli", slug: "shamli", state: "Uttar Pradesh", code: "UP", discom: "PVVNL", agency: "UPNEDA" },
+    { name: "Shravasti", slug: "shravasti", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Siddharthnagar", slug: "siddharthnagar", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Sitapur", slug: "sitapur", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Sonbhadra", slug: "sonbhadra", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Sultanpur", slug: "sultanpur", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Unnao", slug: "unnao", state: "Uttar Pradesh", code: "UP", discom: "MVVNL", agency: "UPNEDA" },
+    { name: "Varanasi", slug: "varanasi", state: "Uttar Pradesh", code: "UP", discom: "PuVVNL", agency: "UPNEDA" },
+    { name: "Uttar Pradesh (Statewide)", slug: "uttar-pradesh", state: "Uttar Pradesh", code: "UP", discom: "UPNEDA All Discoms", agency: "UPNEDA" },
+
+    // --- BIHAR (38 Districts) ---
+    { name: "Araria", slug: "araria", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Arwal", slug: "arwal", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Aurangabad", slug: "aurangabad", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Banka", slug: "banka", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Begusarai", slug: "begusarai", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Bhagalpur", slug: "bhagalpur", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Bhojpur (Ara)", slug: "bhojpur", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Buxar", slug: "buxar", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Darbhanga", slug: "darbhanga", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "East Champaran (Motihari)", slug: "east-champaran", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Gopalganj", slug: "gopalganj", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Jamui", slug: "jamui", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Jehanabad", slug: "jehanabad", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Kaimur (Bhabua)", slug: "kaimur", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Katihar", slug: "katihar", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Khagaria", slug: "khagaria", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Kishanganj", slug: "kishanganj", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Lakhisarai", slug: "lakhisarai", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Madhepura", slug: "madhepura", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Madhubani", slug: "madhubani", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Munger", slug: "munger", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Muzaffarpur", slug: "muzaffarpur", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Nalanda (Bihar Sharif)", slug: "nalanda", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Nawada", slug: "nawada", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Patna", slug: "patna", state: "Bihar", code: "BR", discom: "SBPDCL / NBPDCL", agency: "BREDA" },
+    { name: "Purnia", slug: "purnia", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Rohtas (Sasaram)", slug: "rohtas", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Saharsa", slug: "saharsa", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Samastipur", slug: "samastipur", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Saran (Chhapra)", slug: "saran", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Sheikhpura", slug: "sheikhpura", state: "Bihar", code: "BR", discom: "SBPDCL", agency: "BREDA" },
+    { name: "Sheohar", slug: "sheohar", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Sitamarhi", slug: "sitamarhi", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Siwan", slug: "siwan", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Supaul", slug: "supaul", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Vaishali (Hajipur)", slug: "vaishali", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "West Champaran (Bettiah)", slug: "west-champaran", state: "Bihar", code: "BR", discom: "NBPDCL", agency: "BREDA" },
+    { name: "Bihar (Statewide)", slug: "bihar", state: "Bihar", code: "BR", discom: "BREDA All Discoms", agency: "BREDA" }
+  ];
+
+  const grid = document.getElementById('districtsGrid');
+  const countDisplay = document.getElementById('countDisplay');
+  const noResults = document.getElementById('noResultsBox');
+  const searchInput = document.getElementById('districtSearch');
+  const tabButtons = document.querySelectorAll('.tab-btn');
+
+  let currentFilterState = 'all';
+  let searchQuery = '';
+
+  function renderDistricts(){
+    grid.innerHTML = '';
+    const filtered = districts.filter(d => {
+      const matchState = (currentFilterState === 'all') || (d.code === currentFilterState);
+      const matchSearch = d.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          d.discom.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          d.state.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchState && matchSearch;
+    });
+
+    countDisplay.textContent = filtered.length;
+
+    if(filtered.length === 0){
+      noResults.style.display = 'block';
+    } else {
+      noResults.style.display = 'none';
+      filtered.forEach(d => {
+        const card = document.createElement('div');
+        card.className = 'dist-card';
+        card.innerHTML = `
+          <div>
+            <div class="dist-card-top">
+              <h3>${d.name}</h3>
+              <span class="dist-state-badge ${d.code === 'BR' ? 'br' : ''}">${d.state}</span>
+            </div>
+            <div class="dist-info-row"><span>DISCOM:</span> <b>${d.discom}</b></div>
+            <div class="dist-info-row"><span>Nodal:</span> <b>${d.agency}</b></div>
+            <span class="dist-subsidy-tag">Subsidy: Up to ₹1,08,000</span>
+          </div>
+          <div class="dist-actions">
+            <button type="button" class="btn btn-ghost btn-sm" onclick="selectDistrict('${d.slug}')">View Details</button>
+            <a href="contact.html?state=${encodeURIComponent(d.state)}&city=${encodeURIComponent(d.name)}" class="btn btn-sun btn-sm">Book Survey</a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+  }
+
+  // Live search
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value.trim();
+    renderDistricts();
+  });
+
+  // State Tabs
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilterState = btn.getAttribute('data-state');
+      renderDistricts();
+    });
+  });
+
+  /* ---------------- Single District Focused Mode ---------------- */
+  function selectDistrict(slug){
+    const d = districts.find(item => item.slug.toLowerCase() === slug.toLowerCase());
+    if(!d) return;
+
+    const box = document.getElementById('focusedDistrictBox');
+    document.getElementById('focusedEyebrow').textContent = `${d.name.toUpperCase()} · ${d.state.toUpperCase()} · ROOFTOP SOLAR`;
+    document.getElementById('focusedHeading').textContent = `Solar Panel Installation in ${d.name}, ${d.state}`;
+    document.getElementById('focusedParagraph').textContent = `Step Solar Energy provides residential rooftop solar, commercial plants, and solar water pumps across ${d.name}. Claim up to ₹78,000 Central DBT subsidy under PM Surya Ghar and up to ₹30,000 State Top-Up under ${d.agency} (${d.state}). Our local engineers coordinate site survey, DISCOM (${d.discom}) net-metering approvals, and bank transfer.`;
+    document.getElementById('focusedDiscom').textContent = `DISCOM: ${d.discom}`;
+    document.getElementById('focusedQuoteBtn').href = `contact.html?state=${encodeURIComponent(d.state)}&city=${encodeURIComponent(d.name)}`;
+    document.getElementById('focusedQuoteBtn').textContent = `Request Free Survey in ${d.name}`;
+
+    box.classList.add('show');
+    box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Update browser URL without reloading
+    if(window.history && window.history.pushState){
+      window.history.pushState(null, '', `locations.html?city=${d.slug}`);
+    }
+  }
+
+  function clearFocusedDistrict(){
+    const box = document.getElementById('focusedDistrictBox');
+    box.classList.remove('show');
+    if(window.history && window.history.pushState){
+      window.history.pushState(null, '', `locations.html`);
+    }
+  }
+
+  // Check URL params on load (e.g. ?city=agra)
+  (function initFromUrl(){
+    const params = new URLSearchParams(window.location.search);
+    const cityParam = params.get('city');
+    if(cityParam){
+      selectDistrict(cityParam);
+    }
+  })();
+
+  // Initial render
+  renderDistricts();
+</script>
+</body>
+</html>
+
