@@ -45,6 +45,12 @@
       ]
     },
     {
+      "source": "/google971aba3b343a2934.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    },
+    {
       "source": "/track/:path*",
       "headers": [
         { "key": "Cache-Control", "value": "no-store" }
