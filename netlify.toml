@@ -21,7 +21,48 @@
   to = "https://stepsolar.in/:splat"
   status = 301
 
-# Local SEO programmatic rewrites to locations.html
+# Dedicated static SEO landing pages (must come before the city catch-all)
+[[redirects]]
+  from = "/solar-panel-installation-patna"
+  to = "/solar-panel-installation-patna/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-patna/"
+  to = "/solar-panel-installation-patna/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-bihar"
+  to = "/solar-panel-installation-bihar/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-bihar/"
+  to = "/solar-panel-installation-bihar/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-uttar-pradesh"
+  to = "/solar-panel-installation-uttar-pradesh/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-uttar-pradesh/"
+  to = "/solar-panel-installation-uttar-pradesh/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-ghazipur"
+  to = "/solar-panel-installation-ghazipur/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solar-panel-installation-ghazipur/"
+  to = "/solar-panel-installation-ghazipur/index.html"
+  status = 200
+
+# Remaining city URLs fall back to locations.html
 [[redirects]]
   from = "/solar-panel-installation-:city/"
   to = "/locations.html?city=:city"

@@ -8,7 +8,17 @@
 # update the target to the CRM's deployed origin)
 https://admin.stepsolar.in/*     https://admin.stepsolar.in/crm.html                    200
 
-# Service areas & Programmatic Local SEO rewrites (Consolidated to locations.html)
+# Dedicated static SEO landing pages (must come before the city catch-all)
+/solar-panel-installation-patna              /solar-panel-installation-patna/index.html              200
+/solar-panel-installation-patna/             /solar-panel-installation-patna/index.html              200
+/solar-panel-installation-bihar              /solar-panel-installation-bihar/index.html              200
+/solar-panel-installation-bihar/             /solar-panel-installation-bihar/index.html              200
+/solar-panel-installation-uttar-pradesh      /solar-panel-installation-uttar-pradesh/index.html      200
+/solar-panel-installation-uttar-pradesh/     /solar-panel-installation-uttar-pradesh/index.html      200
+/solar-panel-installation-ghazipur           /solar-panel-installation-ghazipur/index.html           200
+/solar-panel-installation-ghazipur/          /solar-panel-installation-ghazipur/index.html           200
+
+# Service areas & remaining city rewrites (fall back to locations.html)
 /locations                       /locations.html                                         200
 /service-areas                   /locations.html                                         200
 /solar-panel-installation-:city/ /locations.html?city=:city                              200
